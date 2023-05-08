@@ -1,3 +1,3 @@
-# Linked Care Implementation Guide (IG)
+# Linked Care IG
 
-Feel free to modify this index page with your own awesome content!
+This is the FHIR R5 Implementation Guide for the Linked Care project.
