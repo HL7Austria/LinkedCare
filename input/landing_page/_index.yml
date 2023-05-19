@@ -1,0 +1,6 @@
+- name: HL7 IG Linked Care
+- version: 0.1.0
+- description: Sample Implementation Guide for the Linked Care platform.
+- last_published: %%date%%
+- branch: %%branch%%
+- type: draft
