@@ -1,6 +1,22 @@
-- name: IG Linked Care
-- version: 0.1.0
-- description: Sample Implementation Guide for the Linked Care platform.
+- name: IG "Linked Care": process and resource profiles covering medication order, prescription and dispense; chiefly in the mobile care setting
+- version: 0.2.0
+- description: |
+    The Implementation Guide for the Linked Care platform.
+    Authors: The Linked Care Consortium, as published on
+    https://www.linkedcare.at, comprising:
+    Haus der Barmherzigkeit
+    Die Johanniter
+    FH Campus Wien
+    FH Technikum Wien
+    HCS - Health Communication Service
+    LOIDL Consulting & IT Services GmbH
+    myneva Austria
+    Österreichischer Apotheker-Verlag
+    Steszgal IT
+    Universität Wien
+    Volkshilfe Gesundheits- und soziale Dienst GmbH
+    Volkshilfe Wien - Pflege und Betreuung
+    Wiener Rotes Kreuz
 - last_published: %%date%%
 - branch: %%branch%%
 - type: draft
