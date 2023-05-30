@@ -1,4 +1,4 @@
-- name: IG "Linked Care": process and resource profiles covering medication order, prescription and dispense; chiefly in the mobile care setting
+- name: "IG Linked Care: process and resource profiles covering medication order, prescription and dispense; chiefly in the mobile care setting"
 - version: 0.2.1
 - description: |
     The Implementation Guide for the Linked Care platform.
