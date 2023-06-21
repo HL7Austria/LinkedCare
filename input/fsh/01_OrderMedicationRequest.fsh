@@ -106,7 +106,7 @@ Usage: #example
 * dosageInstruction[=].text = "Take 2 pills on monday" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
-* dosageInstruction[=].timing.repeat.periodUnit = #w
+* dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
 * dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
