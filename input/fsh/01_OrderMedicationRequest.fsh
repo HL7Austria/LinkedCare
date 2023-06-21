@@ -16,19 +16,24 @@ Description: "FHIR Base Profile for Medication Data when ordering in LICA system
 Alias: ELGAMedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste.html
 Alias: ELGADoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
 
+
+Alias: $MedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste.html
+Alias: $DoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
+
+
 Profile: LINCAMeds 
 Parent: Medication
 Id: linca-medication 
 Title: "ELGA complient Medication"
 Description: "Profile restricting the medication code and doseForm to ELGA defined Sets"
-* code from ELGAMedCode
-* doseForm from ELGADoseForm
+* code from $MedCode
+* doseForm from $DoseForm
 
 Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
 
 Instance: ExampleRequest2010
 InstanceOf: LINCAOrderMedicationRequest
-Title: "Example single medication"
+Title: "Example Dosage Splitting 2-0-1-0"
 Usage: #example
 * contained = ExampleMedication
 * identifier.use = #official
@@ -59,8 +64,55 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
 * dosageInstruction[=].doseAndRate.doseQuantity = 1 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#TAB "TAB"
 
-Alias: $MedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste.html
-Alias: $DoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
+Instance: ExampleRequest2000
+InstanceOf: LINCAOrderMedicationRequest
+Title: "Example Daily Dosage"
+Usage: #example
+* contained = ExampleMedication
+* identifier.use = #official
+* identifier.system = "http://www.bmc.nl/portal/prescriptions"
+* identifier.value = "12345689"
+* status = #active
+* intent = #order
+* medication.reference.reference = "#ExampleMedication"
+* subject = Reference(Patient/pat1) "Max Mustermensch"
+* informationSource = Reference(CareTeam/SP1234)
+* note[0].text = "Pharmacy Logisitic Label"
+* dosageInstruction[0].sequence = 1
+* dosageInstruction[=].text = "Take 2 pills daily" 
+* dosageInstruction[=].timing.repeat.frequency = 1
+* dosageInstruction[=].timing.repeat.period = 1
+* dosageInstruction[=].timing.repeat.periodUnit = #d
+* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
+* dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#TAB "TAB"
+
+
+Instance: ExampleRequest2000Monday
+InstanceOf: LINCAOrderMedicationRequest
+Title: "Example One Dosage On Monday"
+Usage: #example
+* contained = ExampleMedication
+* identifier.use = #official
+* identifier.system = "http://www.bmc.nl/portal/prescriptions"
+* identifier.value = "12345689"
+* status = #active
+* intent = #order
+* medication.reference.reference = "#ExampleMedication"
+* subject = Reference(Patient/pat1) "Max Mustermensch"
+* informationSource = Reference(CareTeam/SP1234)
+* note[0].text = "Pharmacy Logisitic Label"
+* dosageInstruction[0].sequence = 1
+* dosageInstruction[=].text = "Take 2 pills on monday" 
+* dosageInstruction[=].timing.repeat.frequency = 1
+* dosageInstruction[=].timing.repeat.period = 1
+* dosageInstruction[=].timing.repeat.periodUnit = #w
+* dosageInstruction[=].timing.repeat.dayOfWeek = #mon
+* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
+* dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#TAB "TAB"
+
+
 
 Instance: ExampleMedication
 InstanceOf: LINCAMeds
