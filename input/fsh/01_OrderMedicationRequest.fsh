@@ -6,6 +6,8 @@ Description: "FHIR Base Profile for Medication Data when ordering in LICA system
 * subject only Reference(Patient)
 * informationSource 1..1 //GDA -> wer sendet den request 
 * medication only Reference(LINCAMeds)
+* performer 1..1 
+* performer only Reference(Practitioner) 
 //* requester 0..1 //author -> wer hat den request inhaltlich verfast
 //* reason only ValueSet(LINCAReasonCode)
 //* notes ^slicing.rules = #open
@@ -13,12 +15,12 @@ Description: "FHIR Base Profile for Medication Data when ordering in LICA system
 //* notes ^short = "Logistic label for the dispensing pharmacy"
 //* medication -> only cod efrom PHZ https://termgit.elga.gv.at/CodeSystem-asp-liste.html, doseForm https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
 
-Alias: ELGAMedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste.html
-Alias: ELGADoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
+Alias: ELGAMedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste
+Alias: ELGADoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform
 
 
-Alias: $MedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste.html
-Alias: $DoseForm = https://termgit.elga.gv.at/ValueSet-elga-medikationdarreichungsform.html
+Alias: $MedCode = https://termgit.elga.gv.at/CodeSystem-asp-liste
+Alias: $DoseForm = 	https://termgit.elga.gv.at/ValueSet/elga-medikationdarreichungsform
 
 
 Profile: LINCAMeds 
@@ -42,6 +44,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.reference.reference = "#ExampleMedication"
+* performer = Reference(Practitioner/Dr.Acula)
 * subject = Reference(Patient/pat1) "Max Mustermensch"
 * informationSource = Reference(CareTeam/SP1234)
 * note[0].text = "Pharmacy Logisitic Label"
@@ -76,6 +79,7 @@ Usage: #example
 * intent = #order
 * medication.reference.reference = "#ExampleMedication"
 * subject = Reference(Patient/pat1) "Max Mustermensch"
+* performer = Reference(Practitioner/Dr.Acula)
 * informationSource = Reference(CareTeam/SP1234)
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
@@ -99,6 +103,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.reference.reference = "#ExampleMedication"
+* performer = Reference(Practitioner/Dr.Acula)
 * subject = Reference(Patient/pat1) "Max Mustermensch"
 * informationSource = Reference(CareTeam/SP1234)
 * note[0].text = "Pharmacy Logisitic Label"

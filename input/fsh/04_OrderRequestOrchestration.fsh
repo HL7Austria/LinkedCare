@@ -6,7 +6,8 @@ Parent: RequestOrchestration
 Id: lincaorder-order-request
 Title: "Order Request"
 Description: "FHIR Base Profile for Medication List when ordering in LINCA system"
-//.contains[x] 1..* only LINCAOrderMedicationRequest
+* contained 1..* 
+//* contained only Reference(LINCAOrderMedicationRequest)
 // needs to be url * instantiatesCanonical only LINCAOrderActivity
 * intent = #order
 * subject 1..1  
