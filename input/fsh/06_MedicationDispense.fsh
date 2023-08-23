@@ -1,11 +1,19 @@
 Profile: LINCAMedicationDispense
 Parent: MedicationDispense
 Title: "Linked Care Dispense Profile"
-Description: "Linkded Care Dispense Profile"
-* contained 1..*
+Description: "Linked Care Dispense Profile"
+* medication 1..1 
+* medication only CodeableReference(LINCAMeds)
+* medication ^short = "Medication that was dispensed"
 * status = #completed
 * authorizingPrescription 1..1
 * authorizingPrescription only Reference(LINCAPrescriptionMedicationRequest)
-* performer 1..*
+* authorizingPrescription ^short = "Prescription that authorized dispense of this medication"
+* performer.actor 1..1
+* performer.actor only Reference(Organization)
+* performer ^short = "Reference to dispensing pharmacy (GDA index)"
+* subject 1..1
+* subject only Reference(HL7ATCorePatient)
+* dosageInstruction 1..*
+* dosageInstruction ^short = "At least a textual instruction should be given"
 
-//Example!

@@ -1,13 +1,14 @@
 
-
-
 Profile: LINCARequestOrchestration
 Parent: RequestOrchestration
 Id: lincaorder-order-request
-Title: "Order Request"
-Description: "FHIR Base Profile for Medication List when ordering in LINCA system. Each medication is a contained resource without an ID. On the LICA Server the contained resources are transformed individual LINCAOrderMedicationRequests with an ID."
+Title: "LINCA Order (LINCARequestOrchestration)"
+Description: "The placer's software creates the RequestOrchestration when (re)ordering medication."
 * contained 1..* 
-* groupIdentifier ^short = "Identifier assigned by LINCA platform that is propagated to each medication request to maintain order encapsulation."
+* contained ^short = "Individual order items (LINCAOrderMedicationRequest). Will be instantiated on the Linked Care Platform."
+* contained only LINCAOrderMedicationRequest
 * intent = #order
 * subject 1..1  
+* subject ^short = "Who created the order"
+* subject only Reference(CareTeam or Organization)
 
