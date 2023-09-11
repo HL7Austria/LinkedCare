@@ -1,5 +1,6 @@
 Profile: LINCAMedicationDispense
 Parent: MedicationDispense
+Id: linca-dipsense-documentation
 Title: "Linked Care Dispense Profile"
 Description: "Linked Care Dispense Profile"
 * medication 1..1 
@@ -14,6 +15,7 @@ Description: "Linked Care Dispense Profile"
 * performer ^short = "Reference to dispensing pharmacy (GDA index)"
 * subject 1..1
 * subject only Reference(HL7ATCorePatient)
-* dosageInstruction 1..*
-* dosageInstruction ^short = "At least a textual instruction should be given"
+* subject ^short = "Patient conform HL7 AT. Make sure the patient is identifiable somehow"
+//* dosageInstruction 1..*
+//* dosageInstruction ^short = "At least a textual instruction should be given"
 

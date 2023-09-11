@@ -14,6 +14,7 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $MedCode#981417
+* requester = Reference(Practitioner/01) "Martha Stewart"
 * performer = Reference(ExamplePractitioner-01)
 * subject = Reference(Patient-01) 
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
@@ -43,6 +44,7 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $MedCode#981417
+* requester = Reference(Practitioner/01) "Martha Stewart"
 * subject = Reference(Patient-03) 
 * performer = Reference(ExamplePractitioner-01)
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
@@ -61,6 +63,7 @@ InstanceOf: LINCAOrderMedicationRequest
 Usage: #inline
 * status = #unknown
 * intent = #proposal
+* requester = Reference(Practitioner/01) "Martha Stewart"
 * medication.concept = $MedCode#981417
 * subject = Reference(Patient-04) 
 * performer = Reference(ExamplePractitioner-01)

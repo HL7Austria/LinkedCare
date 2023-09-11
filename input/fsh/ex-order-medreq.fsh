@@ -6,6 +6,7 @@ Usage: #example
 * id = "linca-order-item-007"
 * supportingInformation[orderref] = Reference(RequestOrchestrationExample)
 * medication.concept = $MedCode#981417
+* requester = Reference(Practitioner/01) "Martha Stewart"
 * subject = Reference(Patient-02) 
 * performer = Reference(ExamplePractitioner-01)
 * informationSource = Reference(Organization/1) "Demo Org"

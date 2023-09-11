@@ -4,6 +4,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * basedOn = Reference(temp-medreq-ex)
+* requester = Reference(Practitioner/01) "Martha Stewart"
 * groupIdentifier.value = "127.0.0.1 eRezeptID" 
 * supportingInformation[orderref] = Reference(RequestOrchestrationExample)
 * medication.concept = $MedCode#981417
