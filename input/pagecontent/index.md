@@ -17,7 +17,7 @@ Linked Care simplifies the flow of information and networks all parties involved
 Open Issues: Individual medication, missing dosage?,  authorization by chief of medicine
 
 ### Medication Order CareTeam Example
-<img src="LINCA_OrderSchematic_simple.jpg" width ="90%" style="display: block; margin-left: auto;
+<img src="LINCA_resources_details.jpg" width ="90%" style="display: block; margin-left: auto;
   margin-right: auto" />
 
   
