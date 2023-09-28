@@ -1,5 +1,6 @@
 - name: "IG Linked Care: process and resource profiles covering medication order, prescription and dispense; chiefly in the mobile care setting"
 - version: 1.2.1
+- title: "Linked Care IG for medication"
 - description: |
     The Implementation Guide for the Linked Care platform.
     Authors: The Linked Care Consortium, as published on
