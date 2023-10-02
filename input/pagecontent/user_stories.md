@@ -15,6 +15,7 @@
                 Now, it is possible to order prescriptions for Renate Rüssel-Olifant. 
                 As Susanne Allzeit will pick up the medication on the go, she places the order 
                 without specifying a pharmacy.
+                <img src="UserStory_001_diagram" alt="UserStory1" width="60%" /><br/>
             </p>
             <p>
                 <h4>Re-stock Order for existing client</h4>
