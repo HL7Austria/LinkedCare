@@ -2,19 +2,21 @@
     <h3> User Stories </h3>
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#menu1">Actor Care</a></li>
-        <li><a data-toggle="tab" href="#menu2">Actor Doctor</a></li>
+        <li><a data-toggle="tab" href="#menu2">Actor <strong>Doctor</strong></a></li>
         <li><a data-toggle="tab" href="#menu3">Actor Pharmacy</a></li>
     </ul>
     <div class="tab-content">
         <div id="menu1" class="tab-pane fade in active">
             <p>
-                <h4>Ordering single medication for a new client</h4>
+                <h4><strong>US001</strong> Ordering single medication for a new client</h4>
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver organization Pflegedienst Immerdar, 
                 whose client, Renate Rüssel-Olifant, is not in the LINCA system yet. 
                 Hence, Susanne Allzeit creates a client record in the system.
                 Now, it is possible to order prescriptions for Renate Rüssel-Olifant. 
                 As Susanne Allzeit will pick up the medication on the go, she places the order 
                 without specifying a pharmacy.
+		<div><a href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorCare/US001-MedOrderSingleArticle.cs">Client-side example implementation</a></div>
+                <a style="border:none;" href="UserStory_001_diagram.svg" target="_blank"><img src="UserStory_001_diagram.svg" width ="50%" style="display:block;float:left" /></a>
             </p>
             <p>
                 <h4>Re-stock Order for existing client</h4>
