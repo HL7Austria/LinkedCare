@@ -1,15 +1,14 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-   <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifacts</a></li>
-   <li><a href="user_stories.html">User Stories</a></li>
-     <li><a href="technical_information.html">Technical Information</a></li>
-
+  <li><a href="user_stories.html">User Stories</a></li>
+  <li><a href="technical_information.html">Technical Information</a></li>
 	<li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">External Resources<b class="caret"> </b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">External Resources</a>
     <ul class="dropdown-menu">
-     <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
-     <li><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/tree/main">SDK<img src="external.png" style="text-align: baseline"/></a></li>
+     <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec</a></li>
+     <li><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/tree/main">SDK</a></li>
     </ul>
   </li> 
 </ul>
