@@ -2,22 +2,24 @@
     <h3> User Stories </h3>
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#menu1">Actor Care</a></li>
-        <li><a data-toggle="tab" href="#menu2">Actor Doctor</a></li>
+        <li><a data-toggle="tab" href="#menu2">Actor <strong>Doctor</strong></a></li>
         <li><a data-toggle="tab" href="#menu3">Actor Pharmacy</a></li>
     </ul>
     <div class="tab-content">
         <div id="menu1" class="tab-pane fade in active">
             <p>
-                <h4>Ordering single medication for a new client</h4>
+                <h4><strong>US001</strong> Ordering single medication for a new client</h4>
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver organization Pflegedienst Immerdar, 
                 whose client, Renate Rüssel-Olifant, is not in the LINCA system yet. 
                 Hence, Susanne Allzeit creates a client record in the system.
                 Now, it is possible to order prescriptions for Renate Rüssel-Olifant. 
                 As Susanne Allzeit will pick up the medication on the go, she places the order 
                 without specifying a pharmacy.
+                <div><a style="border:none;" href="UserStory_001_diagram.svg" target="_blank"><img src="UserStory_001_diagram.svg" width ="69%" style="display:block;float:left;margin-left:auto;margin-right:auto;clear: both;" /></a></div>
+		<div><a href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorCare/US001-MedOrderSingleArticle.cs">Client-side example implementation</a></div>
             </p>
             <p>
-                <h4>Re-stock Order for existing client</h4>
+                <h4>Re-stock order for existing client</h4>
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver 
                 organization Pflegedienst Immerdar, whose client, Renate Rüssel-Olifant, is 
                 already registered as patient in the LINCA system. 
@@ -28,7 +30,7 @@
                 to collect the order there. 
             </p>
             <p>
-                <h4>Inpatient care facility oroder</h4>
+                <h4>Inpatient care facility order</h4>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He needs to collectively order prescription medication for several clients, amongst others 
                 for Günter Gürtelthier and Patrizia Platypus. Patrizia's practitioner is 

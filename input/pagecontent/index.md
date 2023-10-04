@@ -14,10 +14,7 @@ Linked Care simplifies the flow of information and networks all parties involved
 - Medications can be picked up from pharmacy by either the care team, the client, a relative or similar (QR-Code, eCard or alternative) 
 - Request of correction of medication
 
-Open Issues: Individual medication, missing dosage?,  authorization by chief of medicine
+Open Issues: Individual medication, missing dosage, authorization by chief of medicine
 
 ### Medication Order CareTeam Example
-<img src="LINCA_resources_details.jpg" width ="90%" style="display: block; margin-left: auto;
-  margin-right: auto" />
-
-  
+<a href="LINCA_resources_details.svg" target="_blank" style="border:none"><img src="LINCA_resources_details.svg" alt="LINCA Resources, detailed" width ="90%" style="display:block;margin-left:auto;margin-right:auto" /></a>
