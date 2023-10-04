@@ -1,0 +1,15 @@
+{
+  "package-id": "LINCAIG-R5",
+  "title": "Linked Care Implementation Guide",
+  "canonical": "http://fhir.hl7.at/linkedcare",
+  "introduction": "Implementation Guide for the Linked Care medication order process",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Draft",
+      "path": "http://fhir.hl7.at/linkedcare",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}

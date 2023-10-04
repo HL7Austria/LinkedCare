@@ -1,36 +1,27 @@
 Profile: LINCAOrderMedicationRequest
 Parent: MedicationRequest
-Id: lincaorder-medication-request
-Title: "Order Medication Request"
-Description: "FHIR Base Profile for Medication Data when ordering in LICA system"
-* subject only Reference(Patient)
-* informationSource 1..1 //GDA -> wer sendet den request 
-//* requester 0..1 //author -> wer hat den request inhaltlich verfast
-//* reason only ValueSet(LINCAReasonCode)
-//* notes ^slicing.rules = #open
-//* notes ^slicing.discriminator.type = #order
-//* notes ^short = "Logistic label for the dispensing pharmacy"
-
-Alias: $sct = http://snomed.info/sct
-Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
-Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
-
-Instance: medrx0302
-InstanceOf: LINCAOrderMedicationRequest
-Usage: #example
-* contained = med0320
-* identifier.use = #official
-* identifier.system = "http://www.bmc.nl/portal/prescriptions"
-* identifier.value = "12345689"
-* status = #active
-* intent = #order
-* medication.reference.reference = "#med0320"
-* subject = Reference(Patient/pat1) "Max Mustermensch"
-* informationSource = Reference(CareTeam/SP1234)
-* note.text = "Pharmacy Logisitic Label"
-
-
-Instance: med0320
-InstanceOf: Medication
-Usage: #inline
-* code = $sct#324252006 "Azithromycin 250mg capsule (product)"
+Id: linca-order-medication-request
+Title: "LINCA Order Item (LINCAOrderMedicationRequest)"
+Description: "Individual order items created by the Linked Care system according to the contained items in the order. Send to practicioner for authorization."
+* contained 0..0
+* id ^short = "LinkedCare Order Id, assigned by the Linked Care Fhir Server. Any initial value will be overwritten."
+* subject only Reference(HL7ATCorePatient)
+* subject ^short = "Each LINCAOrderMedicationRequest is affiliated with one patient. The patient data is conform to the HL7 Austria patient and must be clearly identifieable."
+* informationSource 1..1 
+* informationSource ^short = "Who ordered this"
+* requester 1..1 
+* requester ^short = "Username/account name in software of placer"
+* medication only CodeableReference(LINCAMeds) 
+* medication from $MedCode
+* medication ^short = "Medication conforming ELGA CodingSystems. At least the central pharma number must be given"
+* performer 1..1 
+* performer only Reference(Practitioner) 
+* performer ^short = "The authorizing practicioner for this order item."
+* priorPrescription ^short = "Contains Reference to invalid/incorrect order that has been repalced by current."
+* supportingInformation ^slicing.rules = #open
+* supportingInformation ^slicing.discriminator.type = #value
+* supportingInformation ^slicing.discriminator.path = "text"
+* supportingInformation ^slicing.ordered = false
+* supportingInformation contains orderref 0..1
+* supportingInformation[orderref] ^short = "Reference to origin (LINCARequestOrchestration) assigned on LinkedCare Platform. Used to link instantiated order items back to their order (LINCARequestOrchestration)."
+* dosageInstruction.doseAndRate.doseQuantity.code from $DoseForm
