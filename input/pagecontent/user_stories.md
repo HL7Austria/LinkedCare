@@ -1,5 +1,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml"> 
-    <h3> User Stories </h3>
+    A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories.
+    <h3>Linked Care Medication Ordering Process User Stories</h3>
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#actor-care">Actor <strong>Care</strong></a></li>
         <li><a data-toggle="tab" href="#actor-doctor">Actor <strong>Doctor</strong></a></li>
