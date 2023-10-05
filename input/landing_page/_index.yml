@@ -1,6 +1,6 @@
-- name: HL7 IG Linked Care
+- name: Linked-Care-IG-R5
 - version: 1.2.2
-- description: The Implementation Guide for the Linked Care platform
+- description: The Implementation Guide for the Linked Care platform. Authored by the Linked Care Consortium.
 - last_published: %%date%%
 - branch: %%branch%%
 - type: draft
