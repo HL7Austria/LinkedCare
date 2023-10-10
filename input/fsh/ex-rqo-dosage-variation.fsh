@@ -1,22 +1,26 @@
-Instance: RequestOrchestrationExample
+Instance: RequestOrchestration-Dosage-Example
 InstanceOf: RequestOrchestration
+Title: "Additional Example: LINCA Order"
+Description: "LINCA Order with different dummy data as in the user stories. Shows all ELGA conform encodeing of dosage instructions used by the other examples."
 Usage: #example
 * intent = #order
 * status = #active 
-* contained[0] = temp-inline-medrequest-01
-* contained[+] = temp-inline-medrequest-02
-* contained[+] = temp-inline-medrequest-03
+* contained[0] = example-2-0-0-1
+* contained[+] = example-daily-2
+* contained[+] = example-mon-2
 * subject = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
 
-Instance: temp-inline-medrequest-01
+Instance: example-2-0-0-1
 InstanceOf: LINCAOrderMedicationRequest
+Title: "Additional Example: LINCA Order Item dosage 01"
+Description: "Example of inline LINCA Order Item with dosage instruction 2-0-0-1 every Thursday"
 Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $MedCode#981417
 * requester = Reference(Practitioner/01) "Martha Stewart"
-* performer = Reference(ExamplePractitioner-01)
-* subject = Reference(Patient-01) 
+* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
+* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
@@ -38,15 +42,17 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
 * dosageInstruction[=].doseAndRate.doseQuantity = 1 #100000073665 
 
-Instance: temp-inline-medrequest-02
+Instance: example-daily-2
 InstanceOf: LINCAOrderMedicationRequest
+Title: "Additional Example: LINCA Order Item dosage 02"
+Description: "Example of inline LINCA Order Item with dosage instruction 2 daily"
 Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $MedCode#981417
 * requester = Reference(Practitioner/01) "Martha Stewart"
-* subject = Reference(Patient-03) 
-* performer = Reference(ExamplePractitioner-01)
+* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
+* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
@@ -58,15 +64,17 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 
-Instance: temp-inline-medrequest-03
+Instance: example-mon-2
 InstanceOf: LINCAOrderMedicationRequest
+Title: "Additional Example: LINCA Order Item dosage 03"
+Description: "Example of inline LINCA Order Item with dosage instruction 2 every Monday"
 Usage: #inline
 * status = #unknown
 * intent = #proposal
 * requester = Reference(Practitioner/01) "Martha Stewart"
 * medication.concept = $MedCode#981417
-* subject = Reference(Patient-04) 
-* performer = Reference(ExamplePractitioner-01)
+* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
+* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
