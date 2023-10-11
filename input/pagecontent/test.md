@@ -1,4 +1,5 @@
-### Endpoints
+### Linked Care Technical Information for Implementers
+#### Endpoints
 
 <table class="table table-striped">
     <thead>
@@ -23,7 +24,7 @@
     </tbody>
 </table>
 
-### Validation Messages
+#### Validation Messages
 All REST endpoints will return the usual range of <a target="_blank" href="https://http.cat/">http status codes</a> back to the client. Implementations <em>should</em> guarantee, that in case of http status code <a target="_blank" href="https://www.rfc-editor.org/rfc/rfc9110.html#name-400-bad-request">400 Bad Request</a> and also in case of http status code <a target="_blank" href="https://www.rfc-editor.org/rfc/rfc9110.html#name-409-conflict">Conflict</a>, the response body will contain an <a target="_blank" href="https://www.hl7.org/fhir/operationoutcome.html">OperationOutcome</a> resource with details about the error. There is also one case where the response body will contain an OperationOutcome even though the http status code is <a target="_blank" href="https://www.rfc-editor.org/rfc/rfc9110.html#status.200">200 OK</a>: Partially successful cancellation of order.
 
 The LINCA implementation defines the following operation outcomes:
@@ -65,7 +66,7 @@ The LINCA implementation defines the following operation outcomes:
 </tbody>
 </table>
 
-### System Messages
+#### System Messages
 In addition to that, the base implementation defines standard validation outcomes as follows:
 
 <table class="table table-striped">

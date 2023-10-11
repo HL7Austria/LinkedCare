@@ -1,6 +1,6 @@
-<div xmlns="http://www.w3.org/1999/xhtml"> 
-    A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories.
-    <h3>Linked Care Medication Ordering Process User Stories</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" class="container"> 
+   A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories.
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#actor-care">Actor <strong>Care</strong></a></li>
         <li><a data-toggle="tab" href="#actor-doctor">Actor <strong>Doctor</strong></a></li>
@@ -9,7 +9,7 @@
     <div class="tab-content">
         <div id="actor-care" class="tab-pane fade in active">
             <p>
-                <h4><strong>US001</strong> Ordering single medication for a new client</h4>
+               <strong>US001</strong> Ordering single medication for a new client
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver organization Pflegedienst Immerdar, 
                 whose client, Renate Rüssel-Olifant, is not in the LINCA system yet. 
                 Hence, Susanne Allzeit creates a client record in the system.
@@ -22,7 +22,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US002</strong> Re-stock order for existing client</h4>
+                <strong>US002</strong> Re-stock order for existing client
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver 
                 organization Pflegedienst Immerdar, whose client, Renate Rüssel-Olifant, is 
                 already registered as patient in the LINCA system. 
@@ -37,7 +37,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US003</strong> Inpatient care facility order</h4>
+                <strong>US003</strong> Inpatient care facility order
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He needs to collectively order prescription medication for several clients, amongst others 
                 for Günter Gürtelthier and Patrizia Platypus. Patrizia's practitioner is 
@@ -51,7 +51,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US004</strong> Modifying an order</h4>
+                <strong>US004</strong> Modifying an order
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Now, he needs to modify details of that order, in particular he wants to update one 
@@ -64,7 +64,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US005</strong> Cancel individual order positions</h4>
+                <strong>US005</strong> Cancel individual order positions
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Now, he needs to cancel individual order positions for his client Patrizia Platypus.
@@ -78,7 +78,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US006</strong> Cancel an order in its entirety</h4>
+                <strong>US006</strong> Cancel an order in its entirety
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA. Now, he needs to cancel the complete order due to a major mistake.
                 He submits a delete request on the order number, providing a reason for cancellation, such as a human error. 
@@ -89,7 +89,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US007</strong> Check order status</h4>
+                <strong>US007</strong> Check order status
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Walter Specht needs to know the status of that order, and he has the permission to read the 
@@ -103,7 +103,7 @@
         </div>
         <div id="actor-doctor" class="tab-pane fade">
             <p>
-                <h4><strong>US008</strong> Get orders to prescribe</h4>
+                <strong>US008</strong> Get orders to prescribe
                 Practitioner Dr. Kunibert Kreuzotter is responsible for the LINCA registered care giver clients Patrizia Platypus and Renate Rüssel-Olifant, who are two of his patients. 
                 Dr. Kunibert Kreuzotter has access to and permission in a practitioner role in the LINCA system, 
                 hence he is expected to prescribe orders via the LINCA system. 
@@ -117,7 +117,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US009</strong> Stop medication intake</h4>
+                <strong>US009</strong> Stop medication intake
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that Günter Gürtelthier shall no longer take the medication intended by that order position. 
@@ -128,7 +128,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US010</strong> Prescribe as ordered</h4>
+                <strong>US010</strong> Prescribe as ordered
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides to issue a prescription for the medication for Günter Gürtelthier intended by that order position. 
@@ -141,7 +141,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US011</strong> Prescribe with medication adaptions</h4>
+                <strong>US011</strong> Prescribe with medication adaptions
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that the medication intended by a particular order position needs to be adjusted.  
@@ -155,7 +155,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US012</strong> Prescribe with dosage adaptions</h4>
+                <strong>US012</strong> Prescribe with dosage adaptions
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. She has received a LINCA order position requesting medication prescription for him and has already 
                 submitted a prescription for that order position.
                 She decides that the dosage instructions in the prior prescription need to be defined or modified. 
@@ -167,7 +167,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US013</strong> Prescribe supplementary article</h4>
+                <strong>US013</strong> Prescribe supplementary article
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that  an additional medication is needed for Günter Gürtelthier.
@@ -181,7 +181,7 @@
         </div>
         <div id="actor-pharmacy" class="tab-pane fade">
             <p>
-                <h4><strong>US014</strong> Get orders to dispense</h4>
+                <strong>US014</strong> Get orders to dispense
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for customers, 
@@ -196,7 +196,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US015</strong> Walk-in LINCA dispense with QR code</h4>
+                <strong>US015</strong> Walk-in LINCA dispense with QR code
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When care giver Susanne Allzeit (DGKP) presents a barcode representing a prescription of a 
@@ -208,7 +208,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US016</strong> Finalize dispense</h4>
+                <strong>US016</strong> Finalize dispense
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 
@@ -222,7 +222,7 @@
                 </a>
             </p>
             <p>
-                <h4><strong>US017</strong> Partial dispense</h4>
+                <strong>US017</strong> Partial dispense
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 

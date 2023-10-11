@@ -43,14 +43,13 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+ index.md:
+   title: Welcome to the Linked Care IG
+ user_stories.md:
+   title: Linked Care Medication Ordering Process User Stories 
+ technical_information.md:
+   title: Linked Care Technical Information for Implementers
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
