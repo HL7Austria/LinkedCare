@@ -1,20 +1,27 @@
-Linked Care simplifies the flow of information and networks all parties involved with the aim of enabling people in the health care professions to work together with the patients themselves, their relatives, as well as doctors, therapists and pharmacies online in an efficient, secure and low-threshold manner directly with optimal IT support. Operation should be simple and save time due to a high degree of automation; for the clients and their relatives, this results in additional security for mobile care and assistance.
+Linked Care is a comprehensive digital system designed to streamline information flow and accessibility in mobile care, assistance, and therapy. It addresses the growing demand for healthcare services due to demographic changes while facing a decrease in available health professionals. The system simplifies information exchange and connects all involved parties, including patients, caregivers, doctors, therapists, and pharmacies, in an efficient and secure online platform with optimal IT support. Linked Care aims to enhance collaboration, reduce workload, and improve care quality by standardizing documentation and promoting interoperability across diverse care settings. By uniting stakeholders and emphasizing ethical and user-oriented development, Linked Care aspires to set a new gold standard, positioning Austria as a pioneer in digital healthcare communication across Europe. The system offers numerous advantages, including increased autonomy for clients, streamlined information access for caregivers, improved engagement for patients and their families, and enhanced integration of digital services for healthcare providers.
 
-### Use Cases
-- Order Prescription (mobile care team, inpatient care, blister pharmacy, practicioner) via PostRequest
-- Notify filler that presciption was ordered 
-- View list of medication (for dispense) per  client (Hier muss die Anordung für Übernahme der Dispension)
-- View list of orders 
-- Edit orders
-- Approvial of order (validity) - ideally this triggers an automatic update of the medication list (each medication is signed)
-- Order Medication based on validated order from practicioner from pharmacy (PostEvent)
-- Pharmacy gets "shopping cart" with validated orders 
-- Pharmacy can check with practicioners regarding changes (i.e. generics) - changes trigger 4 and 5. 
-- Pharmacy prepares medication for dispense 
-- Medications can be picked up from pharmacy by either the care team, the client, a relative or similar (QR-Code, eCard or alternative) 
-- Request of correction of medication
+### Overview Workflow Steps
+#### Ordering Medications
+The medication management process in Linked Care is designed to be efficient and collaborative. It commences with prescription orders initiated by various stakeholders, including mobile care teams, inpatient care, blister pharmacies, and practitioners, facilitated through POST Requests.
 
-Open Issues: Individual medication, missing dosage, authorization by chief of medicine
+#### Electronic Prescription 
+Once an order is placed, the system promptly notifies the designated filler. Care providers have the capability to view and manage medication lists for dispensing on a per-client basis, enabling a structured approach to dispensation. The platform allows for seamless viewing and editing of orders, promoting adaptability and accuracy in prescription management. Crucially, there is a rigorous approval process to verify the validity of orders, aiming for a smooth workflow; ideally, this approval triggers an automatic update of the medication list with each medication being signed off. 
 
-### Medication Order CareTeam Example
+#### Dispense
+Following validation, medication is ordered from the pharmacy, if one was specified in the original order, where the pharmacy receives a consolidated "shopping cart" of validated orders. Collaboration with practitioners regarding any changes, such as the introduction of generics, is encouraged for accuracy, and any alterations instigate the appropriate steps in the process. The pharmacy then efficiently prepares the prescribed medication for dispensing. Patients and their support networks, including the care team or relatives, can conveniently pick up medications from the pharmacy using secure methods like QR-Codes or eCards. Furthermore, the system accommodates requests for corrections to prescribed medications, ensuring a patient-centric approach and comprehensive medication management.
+
+#### Open Issues
+Individual medication, missing dosage, authorization by chief of medicine
+
+### Resource interaction 
+This IG outlines a workflow involving three key actors: Actor Care, Actor Doctor, and Actor Pharmacy. Actor Care initiates the process by ordering medication, resulting in a LINCARequestOrchestration containing LINCAOrderMedicationRequest instances—one for each medication, hence there might be multiple for one client.
+
+The designated practitioner is specified via the "performer" attribute. After Actor Care submits the LINCARequestOrchestration, the Linked Care FHIR server creates instances for each LINCAOrderMedicationRequest, linking them to the LINCARequestOrchestration using the "supportingInformation" attribute. Note: The patient resource is limited to supporting only HL7AT Patients.
+
+Next, Actor Doctor, the designated practitioner, can access and modify relevant LINCAOrderMedicationRequest entries. They have the authority to adjust dosage or prescribe an immediate stop to medication intake. Actor Doctor then creates a LINCAPrescriptionMedicationRequest, referencing the original LINCAOrderMedicationRequest in the "basedOn" attribute and the LINCARequestOrchestration in the "supportingInformation" attribute. The LINCAPrescriptionMedicationRequest includes optional attributes like "groupIdentifier" (eRezeptID) and "identifier" (eMedID).
+
+If a pharmacy (Actor Pharmacy) is specified in the "dispenseRequest" attribute, they can access a list of medications ready for dispensing. The pharmacy creates a LINCAMedicationDispense to document the dispensing process. The "authorizingPrescription" attribute in LINCAMedicationDispense refers to the LINCAPrescriptionMedicationRequest, with the "performer.actor" representing the dispensing Actor Pharmacy. Conversely, if no specific pharmacy is designated, Actor Care receives a QR code for pickup. In this scenario, the LINCAMedicationDispense is created based on the QR code information, ensuring an efficient and transparent dispensing process.
+
+We depict the resources and workflows in the following graph:
+
 <a href="LINCA_resources_details.svg" target="_blank" style="border:none"><img src="LINCA_resources_details.svg" alt="LINCA Resources, detailed" width ="90%" style="display:block;margin-left:auto;margin-right:auto" /></a>

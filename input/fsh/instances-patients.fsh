@@ -38,7 +38,7 @@ Usage: #example
 * telecom.system = #phone
 * telecom.value = "00436641234568"
 * telecom.use = #mobile
-* gender = #male
+* gender = #female
 * birthDate = "1971-07-07"
 * address.use = #home
 * address.type = #both
@@ -63,7 +63,7 @@ Usage: #example
 * telecom.system = #phone
 * telecom.value = "00436641234568"
 * telecom.use = #mobile
-* gender = #male
+* gender = #female
 * birthDate = "1966-08-10"
 * address.use = #home
 * address.type = #both
