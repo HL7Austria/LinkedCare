@@ -4,7 +4,6 @@
   <li><a href="artifacts.html">Artifacts</a></li>
   <li><a href="user_stories.html">User Stories</a></li>
   <li><a href="technical_information.html">Technical Information</a></li>
-    <li><a href="test.html">TEST PAGE</a></li>
 	<li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">External Resources</a>
     <ul class="dropdown-menu">
