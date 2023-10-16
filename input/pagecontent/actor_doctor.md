@@ -1,17 +1,16 @@
-
-  <div xmlns="http://www.w3.org/1999/xhtml" class="container"> 
-   A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories.
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#actor-care">Actor <strong>Care</strong></a></li>
-        <li><a data-toggle="tab" href="#actor-doctor">Actor <strong>Doctor</strong></a></li>
-        <li><a data-toggle="tab" href="#actor-pharmacy">Actor <strong>Pharmacy</strong></a></li>
+<div xmlns="http://www.w3.org/1999/xhtml" class="container">
+    <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#US008">US008</a></li>
+    <li><a data-toggle="pill" href="#US009">US009</a></li>
+    <li><a data-toggle="pill" href="#US010">US010</a></li>
+    <li><a data-toggle="pill" href="#US011">US011</a></li>
+    <li><a data-toggle="pill" href="#US012">US012</a></li>
+    <li><a data-toggle="pill" href="#US013">US013</a></li>
     </ul>
-    <div class="tab-content">
-        <div id="actor-care" class="tab-pane fade in active">
-            {% include actor_care.md %}
-        </div>
-        <div id="actor-doctor" class="tab-pane fade">
-            <p>
+
+   <div class="tab-content">
+       <div id="US008" class="tab-pane fade  in active">
+                   <p>
                 <strong>US008</strong> Get orders to prescribe
                 Practitioner Dr. Kunibert Kreuzotter is responsible for the LINCA registered care giver clients Patrizia Platypus and Renate Rüssel-Olifant, who are two of his patients. 
                 Dr. Kunibert Kreuzotter has access to and permission in a practitioner role in the LINCA system, 
@@ -25,8 +24,9 @@
                     <img src="UserStory_008_diagram.svg" width ="69%" />
                 </a>
             </p>
-            <p>
-                <strong>US009</strong> Stop medication intake
+        </div>
+        <div id="US009" class="tab-pane fade">
+              <strong>US009</strong> Stop medication intake
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that Günter Gürtelthier shall no longer take the medication intended by that order position. 
@@ -36,7 +36,9 @@
                     <img src="UserStory_009_diagram.svg" width ="69%" />
                 </a>
             </p>
-            <p>
+        </div>
+        <div id="US010" class="tab-pane fade">
+              <p>
                 <strong>US010</strong> Prescribe as ordered
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
@@ -49,6 +51,8 @@
                     <img src="UserStory_010_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US011" class="tab-pane fade">
             <p>
                 <strong>US011</strong> Prescribe with medication adaptions
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
@@ -63,7 +67,9 @@
                     <img src="UserStory_011_diagram.svg" width ="69%" />
                 </a>
             </p>
-            <p>
+        </div>
+        <div id="US012" class="tab-pane fade">
+             <p>
                 <strong>US012</strong> Prescribe with dosage adaptions
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. She has received a LINCA order position requesting medication prescription for him and has already 
                 submitted a prescription for that order position.
@@ -75,7 +81,9 @@
                     <img src="UserStory_012_diagram.svg" width ="69%" />
                 </a>
             </p>
-            <p>
+        </div>
+        <div id="US013" class="tab-pane fade">
+       <p>
                 <strong>US013</strong> Prescribe supplementary article
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
@@ -88,63 +96,5 @@
                 </a>
             </p>
         </div>
-        <div id="actor-pharmacy" class="tab-pane fade">
-            <p>
-                <strong>US014</strong> Get orders to dispense
-                Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
-                access to and permission in a pharmacist role in the LINCA system. 
-                When he is expected to fullfil medication orders for customers, 
-                then he submits a read request for open orders where his pharmacy is mentioned as the designated dispenser.
-                He will receive a list of LINCA order position chains, 
-                e.g., for orders for clients of Haus Vogelsang because they mentioned his pharmacy as preferred pick-up point,
-                and his software can interpret the returned LINCA order position chains, 
-                and visually present and import the order and all its position
-                <p><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorPharmacy/US014-GetOpenOrders.cs">Client-side example implementation</a></p>
-                <a style="border:none;" href="UserStory_014_diagram.svg" target="_blank">
-                    <img src="UserStory_014_diagram.svg" width ="69%" />
-                </a>
-            </p>
-            <p>
-                <strong>US015</strong> Walk-in LINCA dispense with QR code
-                Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
-                access to and permission in a pharmacist role in the LINCA system. 
-                When care giver Susanne Allzeit (DGKP) presents a barcode representing a prescription of a 
-                LINCA order for her client Renate Rüssel-Olifant,
-                Then Mag. Andreas Amsel can scan that code at his POS,and his software can fetch the corresponding records from LINCA, and interpret the returned LINCA order position chains and visually present and import the positions included in that prescription for Renate Rüssel-Olifant
-                <p><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorPharmacy/US015-GetOrderPositionInfo.cs">Client-side example implementation</a></p>
-                <a style="border:none;" href="UserStory_015_diagram.svg" target="_blank">
-                    <img src="UserStory_015_diagram.svg" width ="69%" />
-                </a>
-            </p>
-            <p>
-                <strong>US016</strong> Finalize dispense
-                Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
-                access to and permission in a pharmacist role in the LINCA system. 
-                When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 
-                and he has a LINCA order Id to go with a purchase her care giver Susanne Allzeit just made for her, 
-                then Mag. Andreas Amsel submits a dispense record for the order position in question
-                and his software will send that to the LINCA server,
-                and notify the ordering organization, Pflegedienst Immerdar, about the thus completed order position.
-                <p><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorPharmacy/US016-Dispense.cs">Client-side example implementation</a></p>
-                <a style="border:none;" href="UserStory_016_diagram.svg" target="_blank">
-                    <img src="UserStory_016_diagram.svg" width ="69%" />
-                </a>
-            </p>
-            <p>
-                <strong>US017</strong> Partial dispense
-                Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
-                access to and permission in a pharmacist role in the LINCA system. 
-                When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 
-                and he has a LINCA order Id to go with a purchase her care giver Susanne Allzeit just made for her, 
-                and he did not, or is not able to, dispense all of the product at once         
-                then Mag. Andreas Amsel submits a partial dispense record for the order position in question
-                and his software will send that to the LINCA server,
-                and notify the ordering organization, Pflegedienst Immerdar, about the partial dispense.
-                <p><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorPharmacy/US017-PartialDispense.cs">Client-side example implementation</a></p>
-                <a style="border:none;" href="UserStory_017_diagram.svg" target="_blank">
-                    <img src="UserStory_017_diagram.svg" width ="69%" />
-                </a>
-            </p>
-        </div>
-    </div>
+    </div>       
 </div>

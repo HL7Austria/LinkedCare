@@ -1,5 +1,18 @@
-<p>
-               <strong>US001</strong> Ordering single medication for a new client
+<div xmlns="http://www.w3.org/1999/xhtml" class="container">
+    <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#US001">US001</a></li>
+    <li><a data-toggle="pill" href="#US002">US002</a></li>
+    <li><a data-toggle="pill" href="#US003">US003</a></li>
+    <li><a data-toggle="pill" href="#US004">US004</a></li>
+    <li><a data-toggle="pill" href="#US005">US005</a></li>
+    <li><a data-toggle="pill" href="#US006">US006</a></li>
+    <li><a data-toggle="pill" href="#US007">US007</a></li>
+    </ul>
+
+   <div class="tab-content">
+        <div id="US001" class="tab-pane fade in active">
+            <p> 
+                <strong>US001</strong> Ordering single medication for a new client
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver organization Pflegedienst Immerdar, 
                 whose client, Renate Rüssel-Olifant, is not in the LINCA system yet. 
                 Hence, Susanne Allzeit creates a client record in the system.
@@ -11,6 +24,8 @@
                     <img src="UserStory_001_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US002" class="tab-pane fade">
             <p>
                 <strong>US002</strong> Re-stock order for existing client
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver 
@@ -26,6 +41,8 @@
                     <img src="UserStory_002_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US003" class="tab-pane fade">
             <p>
                 <strong>US003</strong> Inpatient care facility order
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
@@ -40,6 +57,8 @@
                     <img src="UserStory_003_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US004" class="tab-pane fade">
             <p>
                 <strong>US004</strong> Modifying an order
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
@@ -53,6 +72,8 @@
                     <img src="UserStory_004_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US005" class="tab-pane fade">
             <p>
                 <strong>US005</strong> Cancel individual order positions
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
@@ -67,6 +88,8 @@
                     <img src="UserStory_005_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US006" class="tab-pane fade">
             <p>
                 <strong>US006</strong> Cancel an order in its entirety
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
@@ -78,6 +101,8 @@
                     <img src="UserStory_006_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+        <div id="US007" class="tab-pane fade">
             <p>
                 <strong>US007</strong> Check order status
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
@@ -90,3 +115,6 @@
                     <img src="UserStory_007_diagram.svg" width ="69%" />
                 </a>
             </p>
+        </div>
+    </div>       
+</div>
