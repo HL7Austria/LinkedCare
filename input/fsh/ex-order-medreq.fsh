@@ -10,9 +10,9 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Renate) 
 * performer = Reference(urn:oid:1.2.40.0.34/2.999.40.0.34.3.1.1)  "Dr. Wibke Würm"
 * informationSource = Reference(urn:oid:1.2.40.0.34/2.999.40.0.34.1.1.3) "Pflegedienst Immerdar"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = ""
 * dosageInstruction[0].sequence = 1
-* dosageInstruction[=].text = "Take 1 pills daily" 
+* dosageInstruction[=].text = "Take 1 pill daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d
@@ -51,9 +51,9 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = ""
 * dosageInstruction[0].sequence = 1
-* dosageInstruction[=].text = "Take 2 pills daily" 
+* dosageInstruction[=].text = "2 x 1 daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d
@@ -70,7 +70,7 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0018589 "Effortil 7,5 mg/ml - Tropfen"
-* subject = Reference(Registered-Patient-Walter)
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34"
@@ -86,7 +86,7 @@ Usage: #inline
     * system = "urn:oid:1.2.40.0.34"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = "Station SUNFLOWER, room 13"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 drops on monday" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -116,7 +116,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.concept = $asp-liste#0018589 "Effortil 7,5 mg/ml - Tropfen"
-* subject = Reference(Registered-Patient-Walter) 
+* subject = Reference(Registered-Patient-Guenter) 
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34"
@@ -133,7 +133,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = "Station SUNFLOWER, room 13"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 drops on monday" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -173,7 +173,7 @@ Usage: #inline
     * system = "urn:oid:1.2.40.0.34"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = "Station TULIP, room 2"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 pills on monday" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -221,7 +221,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
-* note[0].text = "Pharmacy Logisitic Label"
+* note[0].text = "Station TULIP, room 2"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 pills on monday" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -250,7 +250,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.concept.coding.display = "Creme mixed at pharmacy"
-* subject = Reference(Registered-Patient-Walter)
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34"

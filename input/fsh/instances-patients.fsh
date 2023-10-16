@@ -1,14 +1,14 @@
-Instance: Registered-Patient-Walter
+Instance: Registered-Patient-Guenter
 InstanceOf: HL7ATCorePatient
-Title: "Registered Patient 01: 'Walter Gürtelthier'"
-Description: "Instance of dummy patient, who is inpatient at Haus Vogelsang"
+Title: "Registered Patient 01: 'Günter Gürtelthier'"
+Description: "Instance of fictitious patient, who is an inpatient at Haus Vogelsang"
 Usage: #example
 * id = "6800bda462034a9a8123e3dc48c61d53"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "2410011234"
 * active = true
 * name.use = #official
-* name.text = "Walter Gürtelthier"
+* name.text = "Günter Gürtelthier"
 * name.family = "Gürtelthier"
 * name.given = "Walter"
 * telecom.system = #phone
@@ -31,7 +31,7 @@ Usage: #example
 Instance: Registered-Patient-Patrizia
 InstanceOf: HL7ATCorePatient
 Title: "Registered Patient 02: 'Patrizia Platypus' "
-Description: "Instance of dummy patient, who is inpatient at Haus Vogelsang"
+Description: "Instance of fictitious patient, who is inpatient at Haus Vogelsang"
 Usage: #example
 * id = "d14e6251b3c545828f7e44cdc6faf2fb"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
@@ -61,7 +61,7 @@ Usage: #example
 Instance: Registered-Patient-Renate
 InstanceOf: HL7ATCorePatient
 Title: "Registered Patient 03: Renate Rüssel-Olifant"
-Description: "Instance of dummy patient, who is a client at Pflegedienst Immerdar"
+Description: "Instance of fictitious patient, who is a client at Pflegedienst Immerdar"
 Usage: #example
 * id = "ee8d340312484aaca84774b2a0d53533"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
