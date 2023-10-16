@@ -45,7 +45,7 @@ publisher:
 #
 pages:
  index.md:
-   title: Welcome to the Linked Care IG
+   title: Linked Care Implementation Guide Overview
  user_stories.md:
    title: Linked Care Medication Ordering Process User Stories 
  technical_information.md:

@@ -1,8 +1,9 @@
-Instance: Registered-Inpatient-01
+Instance: Registered-Patient-Walter
 InstanceOf: HL7ATCorePatient
-Title: "Example Registered Patient 01: 'Walter Gürtelthier'"
+Title: "Registered Patient 01: 'Walter Gürtelthier'"
 Description: "Instance of dummy patient, who is inpatient at Haus Vogelsang"
 Usage: #example
+* id = "6800bda462034a9a8123e3dc48c61d53"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "2410011234"
 * active = true
@@ -21,13 +22,18 @@ Usage: #example
 * address.city = "Vienna"
 * address.postalCode = "1100"
 * address.country = "AT"
-* managingOrganization = Reference(PseudoeCard-Organization-Inpatient)
+* managingOrganization
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.1.1.1"
+  * display = "Haus Vogelsang"
 
-Instance: Registered-Inpatient-02
+Instance: Registered-Patient-Patrizia
 InstanceOf: HL7ATCorePatient
-Title: "Example Registered Patient 02: 'Patrizia Platypus' "
+Title: "Registered Patient 02: 'Patrizia Platypus' "
 Description: "Instance of dummy patient, who is inpatient at Haus Vogelsang"
 Usage: #example
+* id = "d14e6251b3c545828f7e44cdc6faf2fb"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "0707711234"
 * active = true
@@ -46,15 +52,20 @@ Usage: #example
 * address.city = "Vienna"
 * address.postalCode = "1100"
 * address.country = "AT"
-* managingOrganization = Reference(PseudoeCard-Organization-Inpatient)
+* managingOrganization
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.1.1.1"
+  * display = "Haus Vogelsang"
 
-Instance: Registered-Mobile-Care-Patient
+Instance: Registered-Patient-Renate
 InstanceOf: HL7ATCorePatient
-Title: "Example Registered Patient 03: Renate Rüssel-Olifant"
+Title: "Registered Patient 03: Renate Rüssel-Olifant"
 Description: "Instance of dummy patient, who is a client at Pflegedienst Immerdar"
 Usage: #example
+* id = "ee8d340312484aaca84774b2a0d53533"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
-* identifier.value = "1008661234"
+* identifier.value = "1238100866"
 * active = true
 * name.use = #official
 * name.text = "Renate Rüssel-Olifant"
@@ -71,4 +82,8 @@ Usage: #example
 * address.city = "Vienna"
 * address.postalCode = "1200"
 * address.country = "AT"
-* managingOrganization = Reference(PseudoeCard-Organization-Mobile)
+* managingOrganization 
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"

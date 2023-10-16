@@ -15,7 +15,7 @@ Description: "Linked Care profile for individual order items. A list of order it
 * requester 1..1 
 * requester ^short = "Username/account name in software of placer"
 * medication only CodeableReference(LINCAMeds) 
-* medication from $MedCode
+* medication from $asp-liste
 * medication ^short = "Medication conforming ELGA CodingSystems. At least the central pharma number must be given"
 * performer 1..1 
 * performer only Reference(Practitioner) 

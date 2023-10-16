@@ -1,23 +1,30 @@
-Instance: Example-Full-LINCADispense
+Instance: Example-US016-Full-Dispense
 InstanceOf: LINCAMedicationDispense
-Title: "Example LINCA Dispense: Completly fulfilled"
-Description: "Final element in the order chain. Was completly fulfilled, order is now complete."
+Title: "Ex0104 US016 LINCAMedicationDispense: Full Dispense"
+Description: "Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has access to and permission in a pharmacist role in the LINCA system. When he is expected to fullfil medication orders for a customer Renate Rüssel-Olifant, and he has a LINCA order Id to go with a purchase her care giver Susanne Allzeit just made for her, then Mag. Andreas Amsel submits a dispense record for the order position in question."
 Usage: #example
-* authorizingPrescription = Reference(Example-LINCAPrescription-ASIS)
-* medication.concept = $MedCode#0004340
-* performer.actor = Reference(Registered-Pharmacy-01)
-* subject = Reference(Registered-Mobile-Care-Patient) 
-* dosageInstruction[0].text = "Take 1 pill daily"
-* type = #FFC
-
-Instance: Example-Partial-LINCADispense
-InstanceOf: LINCAMedicationDispense
-Title: "Example LINCA Dispense: Partially fulfilled"
-Description: "Final element in the order chain. Was only partially fulfilled, order is still open."
-Usage: #example
-* authorizingPrescription = Reference(Example-LINCAPrescription-MODIFIED)
-* medication.concept = $MedCode#1293240
-* performer.actor = Reference(Registered-Pharmacy-01)
-* subject = Reference(Registered-Mobile-Care-Patient) 
-* dosageInstruction[0].text = "Take 2 pill daily"
-* type = #FFP
+* id = "d6a2f68cd3f74c28b9dd9fa4ec014cc4"
+* meta
+  * versionId = "1"
+  * lastUpdated = "2023-10-12T16:38:54.0125468+00:00"
+* status = #completed
+* medication.concept = $asp-liste#0031130 "Lasix 40 mg Tabletten"
+* subject = Reference(Registered-Patient-Renate)
+* performer.actor
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.5.1.2"
+  * display = "Apotheke 'Zum frühen Vogel'"
+* authorizingPrescription = Reference(Ex0103-US010-Prescribe-As-is)
+* type = $v3-ActCode#FFC
+* dosageInstruction
+  * sequence = 1
+  * text = "1 pill daily "
+  * timing.repeat
+    * boundsDuration = 1 #d
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
+  * doseAndRate
+    * type = $dose-rate-type#ordered "Ordered"
+    * doseQuantity = 1 #100000073665

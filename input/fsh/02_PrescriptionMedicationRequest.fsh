@@ -14,7 +14,7 @@ Description: "Linked Care Profile for prescriptions. The prescriptions are creat
 * performer ^short = "The authorizing practicioner for this order item."
 * groupIdentifier ^short = "ID for the electric prescription (eRezeptID)"
 * medication only CodeableReference(LINCAMeds) 
-* medication from $MedCode
+* medication from $asp-liste
 * medication ^short = "Medication conforming ELGA CodingSystems. At least the central pharma number must be given"
 * subject only Reference(HL7ATCorePatient)
 * subject ^short = "Each LINCAOrderMedicationRequest is affiliated with one patient. The patient data is conform to the HL7 Austria patient and must be clearly identifieable."

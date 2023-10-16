@@ -1,6 +1,6 @@
 Instance: RequestOrchestration-Dosage-Example
-InstanceOf: RequestOrchestration
-Title: "Additional Example: LINCA Order"
+InstanceOf: LINCARequestOrchestration
+Title: "Example LINCARequestOrchestration: Dosage Variation"
 Description: "LINCA Order with different dummy data as in the user stories. Shows all ELGA conform encodeing of dosage instructions used by the other examples."
 Usage: #example
 * intent = #order
@@ -17,7 +17,7 @@ Description: "Example of inline LINCA Order Item with dosage instruction 2-0-0-1
 Usage: #inline
 * status = #unknown
 * intent = #proposal
-* medication.concept = $MedCode#981417
+* medication.concept = $asp-liste#981417
 * requester = Reference(Practitioner/01) "Martha Stewart"
 * performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
 * subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
@@ -49,7 +49,7 @@ Description: "Example of inline LINCA Order Item with dosage instruction 2 daily
 Usage: #inline
 * status = #unknown
 * intent = #proposal
-* medication.concept = $MedCode#981417
+* medication.concept = $asp-liste#981417
 * requester = Reference(Practitioner/01) "Martha Stewart"
 * performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
 * subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
@@ -72,7 +72,7 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * requester = Reference(Practitioner/01) "Martha Stewart"
-* medication.concept = $MedCode#981417
+* medication.concept = $asp-liste#981417
 * performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
 * subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
 * informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
