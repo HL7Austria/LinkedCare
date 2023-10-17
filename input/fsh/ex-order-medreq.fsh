@@ -6,10 +6,22 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0031130  "Lasix 40 mg Tabletten"
-* requester = Reference(urn:oid:2.999.40.0.34.1.1.3/ALLZEIT_BEREIT) "Susanne Allzeit (DGKP)"
+* requester
+  * identifier
+    * system = "urn:oid:2.999.40.0.34.1.1.3"
+    * value = "ALLZEIT_BEREIT"
+  * display = "DGKP Susanne Allzeit"
 * subject = Reference(Registered-Patient-Renate) 
-* performer = Reference(urn:oid:1.2.40.0.34/2.999.40.0.34.3.1.1)  "Dr. Wibke Würm"
-* informationSource = Reference(urn:oid:1.2.40.0.34/2.999.40.0.34.1.1.3) "Pflegedienst Immerdar"
+* performer 
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.3.1.1"
+  * display = "Dr. Wibke Würm"
+* informationSource
+  * identifier
+    * system = "urn:oid:1.2.40.0.34"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"
 * note[0].text = ""
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
