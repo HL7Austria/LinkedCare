@@ -2,7 +2,7 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifacts</a></li>
-  <li><a href="user_stories.html">User Stories</a></li>
+  <li><a href="user_stories_noscroll.html">User Stories</a></li>
   <li><a href="technical_information.html">Technical Information</a></li>
 	<li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">External Resources</a>

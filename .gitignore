@@ -4,3 +4,9 @@ input-cache/
 fsh-generated/
 temp/
 template/
+_gencontinous.bat
+_gencontinous.sh
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat
+_updatePublisher.sh
