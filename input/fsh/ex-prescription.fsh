@@ -65,7 +65,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.concept = $asp-liste#0059714 "Ultralan - Salbe"
-* subject = Reference(Registered-Patient-Walter)
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34"
@@ -108,7 +108,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medication.concept = $asp-liste#0059714 "Ultralan - Salbe"
-* subject = Reference(Registered-Patient-Walter)
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34"

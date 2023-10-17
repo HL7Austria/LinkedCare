@@ -40,12 +40,13 @@
         <div id="US010" class="tab-pane fade">
               <p>
                 <strong>US010</strong> Prescribe as ordered
-                Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
-                She has received a LINCA order position requesting medication prescription for him.
-                She decides to issue a prescription for the medication for Günter Gürtelthier intended by that order position. 
-                Hence, she submits a prescription for that position with the eMedId and eRezeptId she got
-                and her software will send that to the LINCA server,
-                and the ordering care giver organization Haus Vogelsang will be informed that the order position has been prescribed as ordered.
+                Practitioner Dr. Wibke Würm is responsible for the LINCA registered mobile caregiver client Renate Rüssel-Olifant. 
+She has received a LINCA order position requesting medication prescription for her.
+She decides to issue a prescription for the medication for Renate Rüssel-Olifant intended by that order position. 
+Hence, she submits a prescription for that position with the eMedId and eRezeptId she got
+  and her software will send that to the LINCA server,
+  and the ordering mobile caregiver organization Pflegedienst Immerdar will be informed that the order position has been prescribed as ordered,
+  and they will inform DGKP Susanne Allzeit.
                 <p><a target="_blank" href="https://github.com/loidl-consulting/linca-sdk/blob/main/Specs/ActorDoctor/US010-PrescribeAsOrdered.cs">Client-side example implementation</a></p>
                 <a style="border:none;" href="UserStory_010_diagram.svg" target="_blank">
                     <img src="UserStory_010_diagram.svg" width ="69%" />
