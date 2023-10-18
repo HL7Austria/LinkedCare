@@ -38,7 +38,7 @@ Title: "Ex0102 US001 LINCAProposalMedicationRequest: Systeminstance"
 Description: "The Linked Care FHIR server, creates an instance from DGKP Susanne Allzeit's single medication proposal."
 Usage: #example
 * status = #active
-* intent = #order
+* intent = #proposal
 * meta
   * versionId = "1"
   * lastUpdated = "2023-10-12T10:23:18.7157042+00:00"
@@ -126,7 +126,7 @@ Usage: #example
   * versionId = "1"
   * lastUpdated = "2023-10-12T10:25:51.1513486+00:00"
 * status = #active
-* intent = #order
+* intent = #proposal
 * medication.concept = $asp-liste#0018589 "Effortil 7,5 mg/ml - Tropfen"
 * subject = Reference(Registered-Patient-Guenter) 
 * informationSource
@@ -211,7 +211,7 @@ Usage: #example
   * versionId = "1"
   * lastUpdated = "2023-10-12T10:25:51.1518211+00:00"
 * status = #active
-* intent = #order
+* intent = #proposal
 * medication.concept = $asp-liste#0028903 "Isoptin 80 mg - Dragees"
 * subject = Reference(Registered-Patient-Patrizia)
   * identifier
@@ -260,7 +260,7 @@ Usage: #example
   * lastUpdated = "2023-10-12T11:38:22.7547743+00:00"
 * basedOn = Reference(Ex0203-instance-US003-Item1)
 * status = #active
-* intent = #order
+* intent = #proposal
 * medication.concept.coding.display = "Creme mixed at pharmacy"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
@@ -296,7 +296,7 @@ Usage: #example
   * lastUpdated = "2023-10-12T11:55:45.1715568+00:00"
 * basedOn = Reference(Ex0204-instance-US003-Item2)
 * status = #cancelled
-* intent = #order
+* intent = #proposal
 * medication.concept = $asp-liste#0028903 "Isoptin 80 mg - Dragees"
 * subject = Reference(Registered-Patient-Patrizia)
   * identifier

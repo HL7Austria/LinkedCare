@@ -9,7 +9,7 @@ Usage: #example
 * id = "271c48a5a93945e89d5f32126c811629"
 * contained = Ex0101-inline-LINCAProposalItem-US001
 * status = #active
-* intent = #order
+* intent = #proposal
 * subject
   * identifier
     * system = "urn:oid:1.2.40.0.34"
@@ -28,7 +28,7 @@ Usage: #example
 * contained[0] = Ex0201-inline-LINCAProposalItem-US003-Item1
 * contained[+] = Ex0202-inline-LINCAProposalItem-US003-Item2
 * status = #active
-* intent = #order
+* intent = #proposal
 * subject
   * identifier
     * system = "urn:oid:1.2.40.0.34"

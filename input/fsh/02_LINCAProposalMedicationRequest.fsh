@@ -4,7 +4,7 @@ Id: linca-proposal-medication-request
 Title: "LINCA Proposal Item (LINCAProposalMedicationRequest)"
 Description: "Linked Care profile for individual proposal positions. A list of proposal positions is first received as contained resources in a LINCA Proposal. Then the Linked Care FHIR server creates an instance for each contained item. These instances are send to the assigned practicioner(s) for authorization."
 * status ^short = "In new proposals, the status must be set to unknown. The Linked Care server will set it to active in the instantiated copies of the positions. Possible values: active, cancelled (end-of-chain), unknown"
-* intent ^short = "Possible values: proposal (default in contained), proposal (default in instances), reflex-proposal (automatically created orders due to an ad-hoc prescription)"
+* intent ^short = "Possible values: proposal (default in contained and instance of proposal), order (default in prescriptions), reflex-proposal (automatically created orders due to an ad-hoc prescription)"
 * contained 0..0
 * id ^short = "LinkedCare Proposal Id, assigned by the Linked Care Fhir Server. Any initial value will be overwritten"
 * identifier ^short = "external ID(s), e.g.: can be used to refer to a care software database record"

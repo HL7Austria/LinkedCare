@@ -9,8 +9,8 @@ Description: "Linked Care Profile for the overall proposal. The LINCA Proposal L
 * contained 1..*
 * contained ^short = "Individual proposal items (LINCAProposalMedicationRequest). Will be instantiated on the Linked Care Platform."
 * contained only LINCAProposalMedicationRequest
-* intent = #order
-* intent ^short = "The intent of a LINCARequestOrchestration is always to propose medications."
+* intent = #proposal
+* intent ^short = "The intent of a LINCARequestOrchestration is always to propose medications for prescription (order)."
 * subject 1..1
 * subject ^short = "Who created the proposal"
 * subject only Reference(CareTeam or Organization or Patient or Practitioner or RelatedPerson)

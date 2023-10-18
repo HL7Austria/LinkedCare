@@ -3,7 +3,7 @@ InstanceOf: LINCARequestOrchestration
 Title: "Example LINCARequestOrchestration: Dosage Variation"
 Description: "LINCA Proposal with different dummy data as in the user stories. Shows all ELGA conform encodeing of dosage instructions used by the other examples."
 Usage: #example
-* intent = #order
+* intent = #proposal
 * status = #active 
 * contained[0] = example-2-0-0-1
 * contained[+] = example-daily-2
