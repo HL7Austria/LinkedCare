@@ -1,7 +1,7 @@
 Instance: Ex0103-US010-Prescribe-As-is
 InstanceOf: LINCAPrescriptionMedicationRequest
-Title: "Ex0103 US010 LINCAPrescriptionMedicationRequest: Prescribe as ordered"
-Description: "Practitioner Dr. Wibke Würm is designated practicioner for Renate Rüssel-Olifant.  They decide that the received order is ok and issue a prescription for the medication."
+Title: "Ex0103 US010 LINCAPrescriptionMedicationRequest: Prescribe as proposed"
+Description: "Practitioner Dr. Wibke Würm is designated practicioner for Renate Rüssel-Olifant.  They decide that the received proposal is ok and issue a prescription for the medication."
 Usage: #example
 * id = "331c530a6377444a9e78a8a27a2ec35c"
 * meta
@@ -10,7 +10,7 @@ Usage: #example
 * identifier
   * system = "eMed-ID"
   * value = "XYZ1 ABC2 UVW3"
-* basedOn = Reference(Ex0102-Instance-LINCAOrderItem-US001)
+* basedOn = Reference(Ex0102-Instance-LINCAProposalItem-US001)
 * groupIdentifier
   * system = "eRezept-ID"
   * value = "ASDF GHJ4 KL34"
@@ -49,7 +49,7 @@ Usage: #example
 Instance: Ex0207-US011-Modify-Medication
 InstanceOf: LINCAPrescriptionMedicationRequest
 Title: "Ex0207 US011 LINCAPrescriptionMedicationRequest: Change medication in prescription"
-Description: "Dr. Silvia Spitzmaus does not agree with the ordered medication for Patient Walter Gürtelthier, hence she issues a prescription for a different medication."
+Description: "Dr. Silvia Spitzmaus does not agree with the proposed medication for Patient Walter Gürtelthier, hence she issues a prescription for a different medication."
 Usage: #example
 * id = "091f1a9d0d64415c91f67caccc3f3848"
 * meta

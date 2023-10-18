@@ -1,7 +1,7 @@
 Instance: RequestOrchestration-Dosage-Example
 InstanceOf: LINCARequestOrchestration
 Title: "Example LINCARequestOrchestration: Dosage Variation"
-Description: "LINCA Order with different dummy data as in the user stories. Shows all ELGA conform encodeing of dosage instructions used by the other examples."
+Description: "LINCA Proposal with different dummy data as in the user stories. Shows all ELGA conform encodeing of dosage instructions used by the other examples."
 Usage: #example
 * intent = #order
 * status = #active 
@@ -11,9 +11,9 @@ Usage: #example
 * subject = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
 
 Instance: example-2-0-0-1
-InstanceOf: LINCAOrderMedicationRequest
-Title: "Additional Example: LINCA Order Item dosage 01"
-Description: "Example of inline LINCA Order Item with dosage instruction 2-0-0-1 every Thursday"
+InstanceOf: LINCAProposalMedicationRequest
+Title: "Additional Example: LINCA Proposal Item dosage 01"
+Description: "Example of inline LINCA Proposal Item with dosage instruction 2-0-0-1 every Thursday"
 Usage: #inline
 * status = #unknown
 * intent = #proposal
@@ -43,9 +43,9 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 1 #100000073665 
 
 Instance: example-daily-2
-InstanceOf: LINCAOrderMedicationRequest
-Title: "Additional Example: LINCA Order Item dosage 02"
-Description: "Example of inline LINCA Order Item with dosage instruction 2 daily"
+InstanceOf: LINCAProposalMedicationRequest
+Title: "Additional Example: LINCA Proposal Item dosage 02"
+Description: "Example of inline LINCA Proposal Item with dosage instruction 2 daily"
 Usage: #inline
 * status = #unknown
 * intent = #proposal
@@ -65,9 +65,9 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 
 Instance: example-mon-2
-InstanceOf: LINCAOrderMedicationRequest
-Title: "Additional Example: LINCA Order Item dosage 03"
-Description: "Example of inline LINCA Order Item with dosage instruction 2 every Monday"
+InstanceOf: LINCAProposalMedicationRequest
+Title: "Additional Example: LINCA Proposal Item dosage 03"
+Description: "Example of inline LINCA Proposal Item with dosage instruction 2 every Monday"
 Usage: #inline
 * status = #unknown
 * intent = #proposal

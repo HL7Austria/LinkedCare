@@ -8,7 +8,7 @@ Description: "Linked Care  Profile for dispense documentation. The dispense must
 * medication from $asp-liste
 * medication ^short = "Medication that was dispensed, in conformance with ELGA CodeSystems (text-only, or text and number referencing one of the supported catalogs, as for example the PZN of the Austrian ASP)."
 * status = #completed
-* status ^short = "A dispense ends the chain of the order item. Therefore the status is fixed to 'completed'"
+* status ^short = "A dispense ends the chain of the workflow. Therefore the status is fixed to 'completed'"
 * authorizingPrescription 1..1
 * authorizingPrescription only Reference(LINCAPrescriptionMedicationRequest)
 * authorizingPrescription ^short = "Prescription that authorized dispense of this medication"
