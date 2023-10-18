@@ -19,12 +19,14 @@ Usage: #example
 * type = $v3-ActCode#FFC
 * dosageInstruction
   * sequence = 1
-  * text = "1 pill daily "
+  * text = "1 pill daily"
   * timing.repeat
-    * boundsDuration = 1 #d
     * frequency = 1
     * period = 1
     * periodUnit = #d
   * doseAndRate
     * type = $dose-rate-type#ordered "Ordered"
-    * doseQuantity = 1 #100000073665
+    * doseQuantity 
+      * value = 1 
+      * code = #100000073665
+      * system = $DoseForm
