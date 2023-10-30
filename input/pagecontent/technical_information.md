@@ -167,14 +167,12 @@ The LINCA implementation defines the following operation outcomes:
         <td>The field medication must not be empty</td>
         <td>Enter a value in the medication field</td>
     </tr>
-    <tr>
-        <tr>
+    <tr>        
         <th scope="row">LCVAL27</th>
         <td>The provided refstring <em>value</em> in field subject is no valid refstring</td>
         <td>Enter a valid reference string in the field subject, e.g., 'HL7ATCorePatient/FhirIdOfPatient'</td>
     </tr>
     <tr>
-        <tr>
         <th scope="row">LCVAL28</th>
         <td>Patient reference in subject not found</td>
         <td>Enter the Fhir-Id of an existing HL7ATCorePatient resource</td>
