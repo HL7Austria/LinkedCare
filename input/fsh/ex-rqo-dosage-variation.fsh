@@ -8,7 +8,11 @@ Usage: #example
 * contained[0] = example-2-0-0-1
 * contained[+] = example-daily-2
 * contained[+] = example-mon-2
-* subject = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
+* subject
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"
 
 Instance: example-2-0-0-1
 InstanceOf: LINCAProposalMedicationRequest
@@ -53,7 +57,11 @@ Usage: #inline
 * requester = Reference(Practitioner/01) "Martha Stewart"
 * performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
 * subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
-* informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
+* informationSource
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 pills daily" 
@@ -75,7 +83,11 @@ Usage: #inline
 * medication.concept = $asp-liste#981417
 * performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
 * subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
-* informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
+* informationSource
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 2 pills on monday" 

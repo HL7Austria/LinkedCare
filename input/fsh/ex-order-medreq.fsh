@@ -14,12 +14,12 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Renate) 
 * performer 
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * note[0].text = ""
@@ -50,7 +50,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * requester
@@ -60,7 +60,7 @@ Usage: #example
   * display = "DGKP Susanne Allzeit"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * note[0].text = ""
@@ -85,7 +85,7 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
@@ -95,7 +95,7 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
@@ -110,7 +110,7 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -131,7 +131,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[listref] = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -142,7 +142,7 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
@@ -157,7 +157,7 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -172,7 +172,7 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Patrizia)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
@@ -182,7 +182,7 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
@@ -197,7 +197,7 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -219,7 +219,7 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -230,7 +230,7 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
@@ -245,7 +245,7 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -265,7 +265,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -276,12 +276,12 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -304,7 +304,7 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -315,11 +315,11 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"

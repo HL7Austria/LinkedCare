@@ -17,7 +17,7 @@ After submitting the LINCARequestOrchestration, the Linked Care FHIR server crea
 
 Next, the Actor Doctor, the designated practitioner, fetches all relevant LINCAProposalMedicationRequest. They can only access and modify LINCAProposalMedicationRequest designated to them. 
 Amongst others, the Actor Doctor can adjust dosage/medication or prescribe an immediate stop to medication intake. 
-Once the Actor Doctor authorizes an order item, they create a LINCAPrescriptionMedicationRequest. The original LINCAProposalMedicationRequest is now a reference in the "basedOn" attribute, and a back-reference to the LINCARequestOrchestration once again in the "supportingInformation" attribute. The LINCAPrescriptionMedicationRequest includes optional attributes like "groupIdentifier" (eRezept-ID) and "identifier" (eMed-ID).
+Once the Actor Doctor authorizes an order item, they create a LINCAPrescriptionMedicationRequest. The original LINCAProposalMedicationRequest is now a reference in the "basedOn" attribute, and a back-reference to the LINCARequestOrchestration once again in the "supportingInformation" attribute. The LINCAPrescriptionMedicationRequest includes optional attributes like "groupIdentifier" (eRezeptId) and "identifier" (eMedId).
 
 If the Actor Care has specified a pharmacy (Actor Pharmacy) in the "dispenseRequest" attribute, the designated Actor Pharmacy can fetch the LINCAPrescriptionMedicationRequest and prepare the dispense.
 The Actor Pharmacy must create a LINCAMedicationDispense to document the dispensing process and complete the chain. The "authorizingPrescription" attribute in LINCAMedicationDispense refers to the LINCAPrescriptionMedicationRequest, with the "performer.actor" attribute representing the dispensing Actor Pharmacy. 

@@ -20,7 +20,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * supportingInformation = Reference(Ex0100-LINCARequestOrchestration-US001)
@@ -31,7 +31,7 @@ Usage: #example
   * display = "DGKP Susanne Allzeit"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * dosageInstruction
@@ -68,7 +68,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -79,13 +79,13 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * dosageInstruction.text = "apply 1x daily to the inflicted area"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.3"
   * display = "Apotheke 'Zum Linden Wurm'"
 
@@ -111,12 +111,12 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * dosageInstruction.text = "apply twice daily to the inflicted area. once in the morning and once in the evening"
