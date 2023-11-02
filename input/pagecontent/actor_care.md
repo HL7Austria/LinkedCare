@@ -12,7 +12,7 @@
    <div class="tab-content">
         <div id="US001" class="tab-pane fade in active">
             <p> 
-                <strong>US001</strong> Ordering single medication for a new client
+                <strong>US001</strong> Ordering single medication for a new client<br>
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver organization Pflegedienst Immerdar, 
                 whose client, Renate Rüssel-Olifant, is not in the LINCA system yet. 
                 Hence, Susanne Allzeit creates a client record in the system.
@@ -27,7 +27,7 @@
         </div>
         <div id="US002" class="tab-pane fade">
             <p>
-                <strong>US002</strong> Re-stock order for existing client
+                <strong>US002</strong> Re-stock order for existing client<br>
                 User Susanne Allzeit (DGKP) is an employee at the mobile caregiver 
                 organization Pflegedienst Immerdar, whose client, Renate Rüssel-Olifant, is 
                 already registered as patient in the LINCA system. 
@@ -44,7 +44,7 @@
         </div>
         <div id="US003" class="tab-pane fade">
             <p>
-                <strong>US003</strong> Inpatient care facility order
+                <strong>US003</strong> Inpatient care facility order<br>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He needs to collectively order prescription medication for several clients, amongst others 
                 for Günter Gürtelthier and Patrizia Platypus. Patrizia's practitioner is 
@@ -60,7 +60,7 @@
         </div>
         <div id="US004" class="tab-pane fade">
             <p>
-                <strong>US004</strong> Modifying an order
+                <strong>US004</strong> Modifying an order<br>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Now, he needs to modify details of that order, in particular he wants to update one 
@@ -75,7 +75,7 @@
         </div>
         <div id="US005" class="tab-pane fade">
             <p>
-                <strong>US005</strong> Cancel individual order positions
+                <strong>US005</strong> Cancel individual order positions<br>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Now, he needs to cancel individual order positions for his client Patrizia Platypus.
@@ -91,7 +91,7 @@
         </div>
         <div id="US006" class="tab-pane fade">
             <p>
-                <strong>US006</strong> Cancel an order in its entirety
+                <strong>US006</strong> Cancel an order in its entirety<br>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA. Now, he needs to cancel the complete order due to a major mistake.
                 He submits a delete request on the order number, providing a reason for cancellation, such as a human error. 
@@ -104,7 +104,7 @@
         </div>
         <div id="US007" class="tab-pane fade">
             <p>
-                <strong>US007</strong> Check order status
+                <strong>US007</strong> Check order status<br>
                 User Walter Specht (DGKP) is a caregiver in the inpatient care facility Haus Vogelsang. 
                 He has already placed a collective order for prescription medication for several clients on LINCA.
                 Walter Specht needs to know the status of that order, and he has the permission to read the 
