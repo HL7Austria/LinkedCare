@@ -46,7 +46,7 @@ jobs:
     - name: Install NPM
       uses: actions/setup-node@v2.1.2
       with:
-        check-lastest: true
+        check-latest: true
         
     - name: Install Sushi
       run: sudo npm install -g fsh-sushi
