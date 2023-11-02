@@ -22,7 +22,6 @@ Usage: #inline
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
-* note[0].text = ""
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -63,7 +62,6 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
-* note[0].text = ""
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "2 x 1 daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1

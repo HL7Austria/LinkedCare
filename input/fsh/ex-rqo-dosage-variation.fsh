@@ -22,10 +22,22 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#981417
-* requester = Reference(Practitioner/01) "Martha Stewart"
-* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
-* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
-* informationSource = Reference(1.2.40.0.34.3.1.10193) "Caritas Seniorenwohnhaus Wies"
+* requester
+  * identifier
+    * system = "urn:oid:2.999.40.0.34.1.1.1"
+    * value = "ECHT_SPECHT"
+  * display = "DGKP Walter Specht"
+* performer
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.3.1.3"
+  * display = "Dr. Silvia Spitzmaus"
+* subject = Reference(Registered-Patient-Guenter)
+* informationSource
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.1.1.3"
+  * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Every Thursday morning 2 pills" 
@@ -54,9 +66,17 @@ Usage: #inline
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#981417
-* requester = Reference(Practitioner/01) "Martha Stewart"
-* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
-* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
+* requester
+  * identifier
+    * system = "urn:oid:2.999.40.0.34.1.1.1"
+    * value = "ECHT_SPECHT"
+  * display = "DGKP Walter Specht"
+* performer
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.3.1.3"
+  * display = "Dr. Silvia Spitzmaus"
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"
@@ -79,10 +99,18 @@ Description: "Example of inline LINCA Proposal Item with dosage instruction 2 ev
 Usage: #inline
 * status = #unknown
 * intent = #proposal
-* requester = Reference(Practitioner/01) "Martha Stewart"
+* requester
+  * identifier
+    * system = "urn:oid:2.999.40.0.34.1.1.1"
+    * value = "ECHT_SPECHT"
+  * display = "DGKP Walter Specht"
 * medication.concept = $asp-liste#981417
-* performer = Reference(Practicioner/02) "Ass.-Prof. Dr. Hannes Traxler"
-* subject = Reference(HL7ATCorePatient/01) "Guiliani Francesco" 
+* performer
+  * identifier
+    * system = "urn:oid:1.2.40.0.34.5.2"
+    * value = "2.999.40.0.34.3.1.3"
+  * display = "Dr. Silvia Spitzmaus"
+* subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"

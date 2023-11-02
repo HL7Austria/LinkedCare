@@ -8,11 +8,11 @@ Usage: #example
   * versionId = "1"
   * lastUpdated = "2023-10-12T16:10:21.3817192+00:00"
 * identifier
-  * system = "eMed-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.4.2.1"
   * value = "XYZ1 ABC2 UVW3"
 * basedOn = Reference(Ex0102-Instance-LINCAProposalItem-US001)
 * groupIdentifier
-  * system = "eRezept-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.3"
   * value = "ASDF GHJ4 KL34"
 * status = #active
 * intent = #order
@@ -56,11 +56,11 @@ Usage: #example
   * versionId = "1"
   * lastUpdated = "2023-10-12T13:02:58.6460419+00:00"
 * identifier
-  * system = "eMed-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.4.2.1"
   * value = "CVF1 23ER USW1"
 * basedOn = Reference(Ex0205-US004-Update-basedOn)
 * groupIdentifier
-  * system = "eRezept-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.3"
   * value = "ABCD 1234 EFGH"
 * status = #active
 * intent = #order
@@ -99,11 +99,11 @@ Usage: #example
   * versionId = "1"
   * lastUpdated = "2023-10-12T14:31:02.1031874+00:00"
 * identifier
-  * system = "eMed-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.4.2.1"
   * value = "CVF1 23ER USW1"
 * priorPrescription = Reference(Ex0207-US011-Modify-Medication)
 * groupIdentifier
-  * system = "eRezept-ID"
+  * system = "urn:oid:1.2.40.0.10.1.4.3.3"
   * value = "ABCD 1234 EFGH"
 * status = #active
 * intent = #order
