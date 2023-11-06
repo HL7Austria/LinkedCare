@@ -89,7 +89,7 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
      <tr>
         <th scope="row">LCVAL11</th>
-        <td>'value' in field <em>status</em> is not valid in new LINCARequestOrchestration<</td>
+        <td>'value' in field <em>status</em> is not valid in new LINCARequestOrchestration</td>
         <td>Enter a value that matches the rules of the present resource profile (e.g., 'active')</td>
     </tr>
      <tr>
@@ -129,12 +129,12 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
      <tr>
         <th scope="row">LCVAL19</th>
-        <td>'value'in field <em>intent</em> is not valid in LINCAProposalMedicationRequest</td>
+        <td>'value' in field <em>intent</em> is not valid in LINCAProposalMedicationRequest</td>
         <td>Enter a value that matches the rules of the present resource profile (e.g., 'proposal')</td>
     </tr>
      <tr>
         <th scope="row">LCVAL20</th>
-        <td>'value'in field <em>status</em>> is not valid in LINCAProposalMedicationRequest</td>
+        <td>'value' in field <em>status</em> is not valid in LINCAProposalMedicationRequest</td>
         <td>Enter a value that matches the rules of the present resource profile (e.g., 'active')</td>
     </tr>
      <tr>
@@ -214,8 +214,8 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL36</th>
-        <td>Field <em>supportingInformation</em> cannot differ from referenced resource in field <em>basedOn</em></td>
-        <td>Remove the reference to LINCARequestOrchestration in field <em>supportingInformation</em> or copy it correctly from the resource referenced in <em>basedOn</em></td>
+        <td>Field <em>supportingInformation</em> cannot differ from referenced resource in field <em>basedOn</em>, <em>priorPrescription</em>, or <em>	authorizingPrescription</em></td>
+        <td>Remove the reference to LINCARequestOrchestration in field <em>supportingInformation</em> or copy it correctly from the referenced resource</td>
     </tr>
     <tr>
         <th scope="row">LCVAL37</th>
@@ -244,27 +244,27 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL42</th>
-        <td>Field <em>informationSource</em> cannot differ from the referenced resource in <em>basedOn</em></td>
-        <td>Remove the reference from field <em>informationSource</em> or copy it correctly from the resource referenced in <em>basedOn</em></td>
+        <td>Field <em>informationSource</em> cannot differ from the referenced resource in <em>basedOn</em> or <em>priorPrescription</em></td>
+        <td>Remove the reference from field <em>informationSource</em> or copy it correctly from the referenced resource</td>
     </tr>
     <tr>
         <th scope="row">LCVAL43</th>
-        <td>Field <em>requester</em> cannot differ from the referenced resource in <em>basedOn</em></td>
-        <td>Remove the reference from field <em>requester</em> or copy it correctly from the resource referenced in field <em>basedOn</em></td>
+        <td>Field <em>requester</em> cannot differ from the referenced resource in <em>basedOn</em> or <em>priorPrescription</em></td>
+        <td>Remove the reference from field <em>requester</em> or copy it correctly from the referenced resource</td>
     </tr>
     <tr>
         <th scope="row">LCVAL44</th>
-        <td>Field <em>dispenser</em> cannot differ from the referenced resource in <em>basedOn</em></td>
-        <td>Remove the reference from field <em>dispenser</em> or copy it correctly from the resource referenced in <em>basedOn</em></td>
+        <td>Field <em>dispenser</em> cannot differ from the referenced resource in <em>basedOn</em> or <em>priorPrescription</em></td>
+        <td>Remove the reference from field <em>dispenser</em> or copy it correctly from the referenced resource</td>
     </tr>
     <tr>
         <th scope="row">LCVAL45</th>
-        <td>Field <em>subject</em> cannot differ from the referenced resource in <em>basedOn</em></td>
-        <td>Copy the patient reference correctly from the resource referenced in <em>basedOn</em></td>
+        <td>Field <em>subject</em> cannot differ from the referenced resource in <em>basedOn</em> or <em>priorPrescription</em></td>
+        <td>Copy the patient reference correctly from the referenced resource</td>
     </tr>
     <tr>
         <th scope="row">LCVAL46</th>
-        <td>Field <em>performer</em> cannot differ from the referenced resource in <em>basedOn</em></td>
+        <td>Field <em>performer</em> cannot differ from the referenced resource in <em>basedOn</em> or <em>priorPrescription</em></td>
         <td>Enter the correct performer OID into the field <em>performer</em></td>
     </tr>
     <tr>
@@ -314,7 +314,7 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL56</th>
-        <td>The dispenser's OID must be provided in <em>dispenseRequest.dispenser.identifier.value</em></td>
+        <td>The dispensers OID must be provided in <em>dispenseRequest.dispenser.identifier.value</em></td>
         <td>Enter the value into the field <em>dispenseRequest.dispenser.identifier.value</em></td>
     </tr>
     <tr>
@@ -329,8 +329,8 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL59</th>
-        <td>In field <em>status</em> the value 'active' is required here</td>
-        <td>Enter the value 'active' into the field <em>status</em> in this use case</td>
+        <td>In field <em>status</em> the value 'active' is required in this use case</td>
+        <td>Enter the value 'active' into the field <em>status</em></td>
     </tr>
     <tr>
         <th scope="row">LCVAL60</th>
@@ -344,12 +344,14 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL62</th>
-        <td>Cancellation of proposal id 'value' failed. It has already been processed</td>
+        <td>Cancellation of proposal id 'value' failed>/td>
+	<td>It has already been processed.</td>
         <td></td>
     </tr>
     <tr>
         <th scope="row">LCVAL63</th>
-        <td>Cancellation of RequestOrchestration lc_id 'value' failed. It has already been revoked or completed</td>
+        <td>Cancellation of RequestOrchestration lc_id 'value' failed</td> 
+	<td>It has already been revoked or completed</td>
         <td></td>
     </tr>
   </tbody>
