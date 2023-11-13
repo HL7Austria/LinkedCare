@@ -22,7 +22,7 @@ Usage: #inline
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
-* supportingInformation = Reference(rqo_immerdar_id_0001)
+* supportingInformation = Reference(bfa0d45270674e0794b694f2892cb1c0)
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
