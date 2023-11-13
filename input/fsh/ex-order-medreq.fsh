@@ -3,6 +3,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0101 US001 LINCAProposalMedicationRequest: Single Inline LINCAProposalMedicationRequest"
 Description: "DGKP Susanne Allzeit, employed at mobile care facility 'Pflegedienst Immerdar' proposed a single dedication for her client. The LINCAOrderMedication Request is contained in the LINCARequestOrchestration."
 Usage: #inline
+* id = "04aa30f1bd3a415c8e5a2fb682c57b19"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0031130  "Lasix 40 mg Tabletten"
@@ -22,7 +23,6 @@ Usage: #inline
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
-* supportingInformation = Reference(bfa0d45270674e0794b694f2892cb1c0)
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -78,6 +78,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0201 US003 LINCAProposalMedicationRequest: Inline 01"
 Description: "First item that DGKP Walter Specht proposes for a second patient in inpatient care. One medication request per patient and medication."
 Usage: #inline
+* id = "bfa0d45270674e0794b694f2892cb1c0"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0018589 "Effortil 7,5 mg/ml - Tropfen"
@@ -165,6 +166,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0202 US003 LINCAProposalMedicationRequest: Inline 02"
 Description: "Second item that DGKP Walter Specht proposes for a second patient in inpatient care. One medication request per patient and medication."
 Usage: #inline
+* id = "ef7c1f512c504a1a932c2f90ed39d5d5"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0028903 "Isoptin 80 mg - Dragees"
