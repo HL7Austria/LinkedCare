@@ -8,6 +8,9 @@ Usage: #example
   * lastUpdated = "2023-10-12T10:23:18.6999576+00:00"
 * id = "271c48a5a93945e89d5f32126c811629"
 * contained = Ex0101-inline-LINCAProposalItem-US001
+* identifier
+  * system = "urn:oid:2.999.40.0.34.1.1.3"
+  * value = "rqo_immerdar_id_0001"
 * status = #active
 * intent = #proposal
 * subject
