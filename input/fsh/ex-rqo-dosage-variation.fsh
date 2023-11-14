@@ -13,12 +13,19 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
+* action[0].type = #create
+* action[=].resource = Reference(dd3dc150a0cf4edf8b8cd577191a1000)
+* action[+].type = #create
+* action[=].resource = Reference(d2359858cb6640faa9d1f8a12345bada)
+* action[+].type = #create
+* action[=].resource = Reference(c42a921b95004b87a7d19fa59cf64c99)
 
 Instance: example-2-0-0-1
 InstanceOf: LINCAProposalMedicationRequest
 Title: "Additional Example: LINCA Proposal Item dosage 01"
 Description: "Example of inline LINCA Proposal Item with dosage instruction 2-0-0-1 every Thursday"
 Usage: #inline
+* id = "dd3dc150a0cf4edf8b8cd577191a1000"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#981417
@@ -63,6 +70,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Additional Example: LINCA Proposal Item dosage 02"
 Description: "Example of inline LINCA Proposal Item with dosage instruction 2 daily"
 Usage: #inline
+* id = "d2359858cb6640faa9d1f8a12345bada"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#981417
@@ -97,6 +105,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Additional Example: LINCA Proposal Item dosage 03"
 Description: "Example of inline LINCA Proposal Item with dosage instruction 2 every Monday"
 Usage: #inline
+* id = "c42a921b95004b87a7d19fa59cf64c99"
 * status = #unknown
 * intent = #proposal
 * requester
