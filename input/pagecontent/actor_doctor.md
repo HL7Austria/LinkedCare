@@ -10,8 +10,8 @@
 
    <div class="tab-content">
        <div id="US008" class="tab-pane fade  in active">
-                   <p>
-                <strong>US008</strong> Get orders to prescribe
+            <p>
+                <strong>US008</strong> Get orders to prescribe<br>
                 Practitioner Dr. Kunibert Kreuzotter is responsible for the LINCA registered care giver clients Patrizia Platypus and Renate Rüssel-Olifant, who are two of his patients. 
                 Dr. Kunibert Kreuzotter has access to and permission in a practitioner role in the LINCA system, 
                 hence he is expected to prescribe orders via the LINCA system. 
@@ -26,7 +26,8 @@
             </p>
         </div>
         <div id="US009" class="tab-pane fade">
-              <strong>US009</strong> Stop medication intake
+	    <p>
+              <strong>US009</strong> Stop medication intake<br>
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that Günter Gürtelthier shall no longer take the medication intended by that order position. 
@@ -39,7 +40,7 @@
         </div>
         <div id="US010" class="tab-pane fade">
               <p>
-                <strong>US010</strong> Prescribe as ordered
+                <strong>US010</strong> Prescribe as ordered<br>
                 Practitioner Dr. Wibke Würm is responsible for the LINCA registered mobile caregiver client Renate Rüssel-Olifant. 
 She has received a LINCA order position requesting medication prescription for her.
 She decides to issue a prescription for the medication for Renate Rüssel-Olifant intended by that order position. 
@@ -55,7 +56,7 @@ Hence, she submits a prescription for that position with the eMedId and eRezeptI
         </div>
         <div id="US011" class="tab-pane fade">
             <p>
-                <strong>US011</strong> Prescribe with medication adaptions
+                <strong>US011</strong> Prescribe with medication adaptions<br>
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that the medication intended by a particular order position needs to be adjusted.  
@@ -71,7 +72,7 @@ Hence, she submits a prescription for that position with the eMedId and eRezeptI
         </div>
         <div id="US012" class="tab-pane fade">
              <p>
-                <strong>US012</strong> Prescribe with dosage adaptions
+                <strong>US012</strong> Prescribe with dosage adaptions<br>
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. She has received a LINCA order position requesting medication prescription for him and has already 
                 submitted a prescription for that order position.
                 She decides that the dosage instructions in the prior prescription need to be defined or modified. 
@@ -85,7 +86,7 @@ Hence, she submits a prescription for that position with the eMedId and eRezeptI
         </div>
         <div id="US013" class="tab-pane fade">
        <p>
-                <strong>US013</strong> Prescribe supplementary article
+                <strong>US013</strong> Prescribe supplementary article<br>
                 Practitioner Dr. Silvia Spitzmaus is responsible for the LINCA registered care giver client Günter Gürtelthier. 
                 She has received a LINCA order position requesting medication prescription for him.
                 She decides that  an additional medication is needed for Günter Gürtelthier.

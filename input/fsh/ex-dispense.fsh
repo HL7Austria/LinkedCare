@@ -12,7 +12,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate)
 * performer.actor
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 * authorizingPrescription = Reference(Ex0103-US010-Prescribe-As-is)

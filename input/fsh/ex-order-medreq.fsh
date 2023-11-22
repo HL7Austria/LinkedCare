@@ -3,6 +3,7 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0101 US001 LINCAProposalMedicationRequest: Single Inline LINCAProposalMedicationRequest"
 Description: "DGKP Susanne Allzeit, employed at mobile care facility 'Pflegedienst Immerdar' proposed a single dedication for her client. The LINCAOrderMedication Request is contained in the LINCARequestOrchestration."
 Usage: #inline
+* id = "04aa30f1bd3a415c8e5a2fb682c57b19"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0031130  "Lasix 40 mg Tabletten"
@@ -14,15 +15,14 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Renate) 
 * performer 
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
-* note[0].text = ""
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -50,7 +50,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * requester
@@ -60,10 +60,9 @@ Usage: #example
   * display = "DGKP Susanne Allzeit"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
-* note[0].text = ""
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "2 x 1 daily" 
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -79,13 +78,14 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0201 US003 LINCAProposalMedicationRequest: Inline 01"
 Description: "First item that DGKP Walter Specht proposes for a second patient in inpatient care. One medication request per patient and medication."
 Usage: #inline
+* id = "bfa0d45270674e0794b694f2892cb1c0"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0018589 "Effortil 7,5 mg/ml - Tropfen"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
@@ -95,7 +95,7 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
@@ -110,7 +110,7 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -131,7 +131,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[listref] = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -142,7 +142,7 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
@@ -157,7 +157,7 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -166,13 +166,14 @@ InstanceOf: LINCAProposalMedicationRequest
 Title: "Ex0202 US003 LINCAProposalMedicationRequest: Inline 02"
 Description: "Second item that DGKP Walter Specht proposes for a second patient in inpatient care. One medication request per patient and medication."
 Usage: #inline
+* id = "ef7c1f512c504a1a932c2f90ed39d5d5"
 * status = #unknown
 * intent = #proposal
 * medication.concept = $asp-liste#0028903 "Isoptin 80 mg - Dragees"
 * subject = Reference(Registered-Patient-Patrizia)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
@@ -182,7 +183,7 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
@@ -197,7 +198,7 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -219,7 +220,7 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -230,7 +231,7 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
@@ -245,7 +246,7 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -265,7 +266,7 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -276,12 +277,12 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
@@ -304,7 +305,7 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
@@ -315,11 +316,11 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"

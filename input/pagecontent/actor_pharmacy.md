@@ -1,6 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" class="container">
     <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#US008">US008</a></li>
     <li><a data-toggle="pill" href="#US014">US014</a></li>
     <li><a data-toggle="pill" href="#US015">US015</a></li>
     <li><a data-toggle="pill" href="#US016">US016</a></li>
@@ -9,8 +8,8 @@
 
    <div class="tab-content">
        <div id="US014" class="tab-pane fade  in active">
-                  <p>
-                <strong>US014</strong> Get orders to dispense
+            <p>
+                <strong>US014</strong> Get orders to dispense<br>
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for customers, 
@@ -26,8 +25,8 @@
             </p>
         </div>
         <div id="US015" class="tab-pane fade">
-                   <p>
-                <strong>US015</strong> Walk-in LINCA dispense with QR code
+            <p>
+                <strong>US015</strong> Walk-in LINCA dispense with QR code<br>
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When care giver Susanne Allzeit (DGKP) presents a barcode representing a prescription of a 
@@ -40,8 +39,8 @@
             </p>
         </div>
         <div id="US016" class="tab-pane fade">
-                     <p>
-                <strong>US016</strong> Finalize dispense
+            <p>
+                <strong>US016</strong> Finalize dispense<br>
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 
@@ -56,8 +55,8 @@
             </p>
         </div>
         <div id="US017" class="tab-pane fade">
-               <p>
-                <strong>US017</strong> Partial dispense
+            <p>
+                <strong>US017</strong> Partial dispense<br>
                 Pharmacist Mag. Andreas Amsel, owner of the pharmacy Apotheke 'Zum frühen Vogel' has 
                 access to and permission in a pharmacist role in the LINCA system. 
                 When he is expected to fullfil medication orders for a customer, e.g., Renate Rüssel-Olifant, 
