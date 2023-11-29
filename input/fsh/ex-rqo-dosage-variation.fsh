@@ -54,7 +54,7 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.dayOfWeek = #thu
 * dosageInstruction[=].timing.repeat.when = #MORN
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 * dosageInstruction[1].sequence = 2
 * dosageInstruction[=].text = "Every Thursday Evening 1 pill" 
 * dosageInstruction[=].timing.repeat.frequency = 1

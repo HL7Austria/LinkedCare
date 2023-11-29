@@ -23,7 +23,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
-* supportingInformation = Reference(Ex0100-LINCARequestOrchestration-US001)
+* supportingInformation[0] = Reference(Ex0100-LINCARequestOrchestration-US001)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.3"
@@ -38,13 +38,12 @@ Usage: #example
   * sequence = 1
   * text = "1 pill daily"
   * timing.repeat
-    * boundsDuration = 1 #d
     * frequency = 1
     * period = 1
     * periodUnit = #d
   * doseAndRate
     * type = $dose-rate-type#ordered "Ordered"
-    * doseQuantity = 1 #100000073665
+    * doseQuantity = 1 $DoseForm#100000073665
 
 Instance: Ex0207-US011-Modify-Medication
 InstanceOf: LINCAPrescriptionMedicationRequest
@@ -71,7 +70,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
-* supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
+* supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.1"
