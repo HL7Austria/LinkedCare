@@ -240,7 +240,7 @@ The LINCA implementation defines the following operation outcomes:
     <tr>
         <th scope="row">LCVAL41</th>
         <td>Referenced resource in field <em>priorPrescription</em> is not the latest chain link</td>
-        <td>Always refer to the youngest link in a resource chain</td>
+        <td>Always refer to the latest link in a resource chain</td>
     </tr>
     <tr>
         <th scope="row">LCVAL42</th>
@@ -344,15 +344,53 @@ The LINCA implementation defines the following operation outcomes:
     </tr>
     <tr>
         <th scope="row">LCVAL62</th>
-        <td>Cancellation of proposal id 'value' failed>/td>
-	<td>It has already been processed.</td>
-        <td></td>
+        <td>Cancellation of proposal id 'value' failed</td>
+	    <td>It has already been processed.</td>
     </tr>
     <tr>
         <th scope="row">LCVAL63</th>
         <td>Cancellation of RequestOrchestration lc_id 'value' failed</td> 
-	<td>It has already been revoked or completed</td>
-        <td></td>
+    	<td>It has already been revoked or completed</td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL64</th>
+        <td>Contained resources must be referenced in field <em>action.resource</em></td> 
+    	<td>Add a reference to the internal id of the contained resource</td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL65</th>
+        <td>The OID in field <em>dispenseRequest.dispenser</em> is not valid</td> 
+	    <td>Enter a syntactically correct OID of an active pharmacy</td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL66</th>
+        <td>The OID in field <em>performer</em> cannot differ from the OID in the sender's certificate</td> 
+    	<td>Enter the correct OID in field <em>performer</em></td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL67</th>
+        <td>The field <em>priorPrescription</em> must be empty when intent is set to 'originalOrder'</td> 
+	    <td>Either remove the reference in <em>priorPrescription</em>, or set the intent to 'order'</td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL68</th>
+        <td>In a Bundle of LINCAPrescriptionMedicationRequests, all of them must refer to the same <em>subject</em></td> 
+	    <td>Remove LINCAPrescriptionMedicationRequests with differing <em>subject</em></td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL69</th>
+        <td>In a Bundle of LINCAPrescriptionMedicationRequests, all of them must have the same <em>groupIdentifier</em></td> 
+    	<td>Remove LINCAPrescriptionMedicationRequests with differing <em>groupIdentifier</em></td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL70</th>
+        <td>Genuine initial prescriptions cannot be connected to existing orders/lc_id</td> 
+	    <td>Remove the reference from <em>supportingInformation</em></td>
+    </tr>
+    <tr>
+        <th scope="row">LCVAL71</th>
+        <td>New and active prescriptions must be sent with [POST $prescription Bundle]</td> 
+    	<td>Check the Linked Care Implementation Guide, User Stories for Actor Doctor</td>
     </tr>
   </tbody>
 </table>
