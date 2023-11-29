@@ -19,11 +19,6 @@ Description: "Linked Care Profile for prescriptions. The prescriptions are creat
 * medication ^short = "Medication in conformance with ELGA CodeSystems (text-only, or text and number referencing one of the supported catalogs, as for example the PZN of the Austrian ASP)."
 * subject only Reference(HL7ATCorePatient)
 * subject ^short = "Each LINCAProposalMedicationRequest is associated with one patient. The patient data is conform to the HL7 Austria patient and must be clearly identifieable."
-* supportingInformation ^slicing.rules = #open
-* supportingInformation ^slicing.discriminator.type = #value
-* supportingInformation ^slicing.discriminator.path = "text"
-* supportingInformation ^slicing.ordered = false
-* supportingInformation contains listref 0..1
-* supportingInformation[listref] ^short = "Reference to origin (LINCAProposalRequestOrchestration) assigned on LinkedCare Platform. Used to link instantiated items back to their proposal header (LINCARequestOrchestration)."
+* supportingInformation ^short = "First Element is reserved for reference to origin (LINCARequestOrchestration) assigned on LinkedCare Platform. Used to link instantiated proposal items back to the proposal header (LINCARequestOrchestration)."
 * priorPrescription ^short = "In case of a modification, takes a reference to the prescription that has been replaced."
 * dosageInstruction.doseAndRate.doseQuantity.code from $DoseForm

@@ -22,11 +22,6 @@ Description: "Linked Care profile for individual proposal positions. A list of p
 * performer 1..1 
 * performer only Reference(Practitioner) 
 * performer ^short = "The authorizing practitioner for this proposal item (identified by their OID according to GDA Index)"
-* supportingInformation ^slicing.rules = #open
-* supportingInformation ^slicing.discriminator.type = #value
-* supportingInformation ^slicing.discriminator.path = "text"
-* supportingInformation ^slicing.ordered = false
-* supportingInformation contains listref 0..1
-* supportingInformation[listref] ^short = "Reference to origin (LINCARequestOrchestration) assigned on LinkedCare Platform. Used to link instantiated proposal items back to the proposal header (LINCARequestOrchestration)."
+* supportingInformation ^short = "First Element is reserved for reference to origin (LINCARequestOrchestration) assigned on LinkedCare Platform. Used to link instantiated proposal items back to the proposal header (LINCARequestOrchestration)."
 * dosageInstruction.doseAndRate.doseQuantity.code from $DoseForm
 * dispenseRequest.dispenser ^short = "Reference to preferred pharmacy for pickup (OID according to GDA Index)"
