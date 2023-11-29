@@ -44,7 +44,7 @@ Usage: #example
 * id = "b8aad49741e74c36aeab76cada3ad1bc"
 * meta.versionId = "1"
 * meta.lastUpdated = "2023-10-12T10:23:18.7157042+00:00"
-* supportingInformation = Reference(Ex0100-LINCARequestOrchestration-US001)
+* supportingInformation[0] = Reference(Ex0100-LINCARequestOrchestration-US001)
 * medication.concept = $asp-liste##0031130 "Lasix 40 mg Tabletten"
 * subject = Reference(Registered-Patient-Renate) 
 * informationSource
@@ -131,7 +131,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
-* supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
+* supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.1"
@@ -218,7 +218,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
-* supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
+* supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.1"
@@ -263,7 +263,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
-* supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
+* supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.1"
@@ -302,7 +302,7 @@ Usage: #example
     * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
-* supportingInformation = Reference(Ex0200-LINCARequestOrchestration-US003)
+* supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
   * identifier
     * system = "urn:oid:2.999.40.0.34.1.1.1"
