@@ -28,9 +28,8 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 1 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 1 $DoseForm#100000073665 
 
 Instance: Ex0102-Instance-LINCAProposalItem-US001
 InstanceOf: LINCAProposalMedicationRequest
@@ -68,9 +67,8 @@ Usage: #example
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 
 
 Instance: Ex0201-inline-LINCAProposalItem-US003-Item1
@@ -105,9 +103,8 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000116169 
 * dispenseRequest.dispenser
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"
@@ -152,9 +149,8 @@ Usage: #example
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000116169 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000116169 
 * dispenseRequest.dispenser
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"
@@ -193,9 +189,8 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 * dispenseRequest.dispenser
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"
@@ -241,9 +236,8 @@ Usage: #example
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 * dispenseRequest.dispenser
   * identifier
     * system = "urn:oid:1.2.40.0.34.5.2"

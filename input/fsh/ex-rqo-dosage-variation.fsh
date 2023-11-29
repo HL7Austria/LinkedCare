@@ -63,7 +63,7 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.dayOfWeek = #thu
 * dosageInstruction[=].timing.repeat.when = #EVE
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 1 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 1 $DoseForm#100000073665 
 
 Instance: example-daily-2
 InstanceOf: LINCAProposalMedicationRequest
@@ -96,9 +96,8 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 
 Instance: example-mon-2
 InstanceOf: LINCAProposalMedicationRequest
@@ -132,6 +131,5 @@ Usage: #inline
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #wk
 * dosageInstruction[=].timing.repeat.dayOfWeek = #mon
-* dosageInstruction[=].timing.repeat.boundsDuration = 14 #d
 * dosageInstruction[=].doseAndRate.type = $dose-rate-type#ordered "Ordered"
-* dosageInstruction[=].doseAndRate.doseQuantity = 2 #100000073665 
+* dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
