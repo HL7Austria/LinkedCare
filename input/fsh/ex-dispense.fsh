@@ -12,19 +12,21 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate)
 * performer.actor
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 * authorizingPrescription = Reference(Ex0103-US010-Prescribe-As-is)
 * type = $v3-ActCode#FFC
 * dosageInstruction
   * sequence = 1
-  * text = "1 pill daily "
+  * text = "1 pill daily"
   * timing.repeat
-    * boundsDuration = 1 #d
     * frequency = 1
     * period = 1
     * periodUnit = #d
   * doseAndRate
     * type = $dose-rate-type#ordered "Ordered"
-    * doseQuantity = 1 #100000073665
+    * doseQuantity 
+      * value = 1 
+      * code = #100000073665
+      * system = $DoseForm

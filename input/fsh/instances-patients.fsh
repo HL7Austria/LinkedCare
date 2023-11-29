@@ -24,7 +24,7 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 
@@ -54,7 +54,7 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 
@@ -84,6 +84,6 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization 
   * identifier
-    * system = "urn:oid:1.2.40.0.34"
+    * system = "urn:oid:1.2.40.0.34.5.2"
     * value = "2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"

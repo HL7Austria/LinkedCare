@@ -1,6 +1,6 @@
 
   <div xmlns="http://www.w3.org/1999/xhtml" class="container"> 
-   A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories.
+   A complete Linked Care implementation shall provide at least the functionality described in the following collection of user stories. In the user stories for actor care, we differentiate between mobile and stationary care, but mobile caregivers can of course also place collective orders for several patients. 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#actor-care">Actor <strong>Care</strong></a></li>
         <li><a data-toggle="tab" href="#actor-doctor">Actor <strong>Doctor</strong></a></li>

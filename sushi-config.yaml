@@ -9,7 +9,7 @@ name: Linked-Care-IG-R5
 title: Linked Care Implementation Guide
 description: The Implementation Guide for the Linked Care platform. Authored by the Linked Care Consortium.
 status: draft # draft | active | retired | unknown
-version: 1.2.2
+version: 0.9.1
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
