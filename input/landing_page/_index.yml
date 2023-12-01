@@ -1,6 +1,6 @@
-- name: Linked-Care-IG-R5
-- version: 0.9.1
+- name: Linked-Care-IG-R5 - Ballot 1 - 2023
+- version: 1.0.0-STU1
 - description: The Implementation Guide for the Linked Care platform. Authored by the Linked Care Consortium.
-- last_published: %%date%%
-- branch: %%branch%%
+- last_published: 29.11.2023
+- branch: ballot_2023_01
 - type: draft
