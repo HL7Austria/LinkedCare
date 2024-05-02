@@ -1,20 +1,20 @@
 Instance: LINCACapabilityStatement
 InstanceOf: CapabilityStatement
 Usage: #definition
+* version = "1.3.0"
+* name = "LinkedCare_FHIRCAAT_CapabilityStatement"
+* status = #active
+* experimental = true
+* date = "2023-11-01"
+* description = "LOIDL Consulting HL7/FHIR R5 Gateway"
+* kind = #requirements
+* fhirVersion = #5.0.0
 * contained[0] = proposalStatusOperation
 * contained[+] = proposalsToPrescribeOperation
 * contained[+] = prescriptionOperation
 * contained[+] = prescriptionsToDispenseOperation
 * contained[+] = prescriptionToDispenseOperation
 * contained[+] = patientInitialPrescriptionsOperation
-* version = "1.3.0"
-* name = "Linked Care FHIRCAAT Capability Statement"
-* status = #active
-* experimental = true
-* date = "2023-11-01"
-* description = "LOIDL Consulting HL7/FHIR R5 Gateway"
-* kind = #instance
-* fhirVersion = #5.0.0
 * format[0] = #xml
 * format[+] = #json
 * rest.mode = #server
@@ -42,17 +42,8 @@ Usage: #definition
 * rest.resource[=].conditionalUpdate = false
 * rest.resource[=].conditionalDelete = #not-supported
 * rest.resource[+].type = #MedicationRequest
-* rest.resource[=].profile = "http://fhir.hl7.at/linkedcare/StructureDefinition/linca-proposal-medication-request"
-* rest.resource[=].interaction[0].code = #create
-* rest.resource[=].interaction[+].code = #read
-* rest.resource[=].versioning = #no-version
-* rest.resource[=].readHistory = true
-* rest.resource[=].updateCreate = false
-* rest.resource[=].conditionalCreate = false
-* rest.resource[=].conditionalUpdate = false
-* rest.resource[=].conditionalDelete = #not-supported
-* rest.resource[+].type = #MedicationRequest
-* rest.resource[=].profile = "http://fhir.hl7.at/linkedcare/StructureDefinition/linca-prescription-medication-request"
+* rest.resource[=].supportedProfile[0] = "http://fhir.hl7.at/linkedcare/StructureDefinition/linca-proposal-medication-request"
+* rest.resource[=].supportedProfile[+] = "http://fhir.hl7.at/linkedcare/StructureDefinition/linca-prescription-medication-request"
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].versioning = #no-version
@@ -71,25 +62,26 @@ Usage: #definition
 * rest.resource[=].conditionalCreate = false
 * rest.resource[=].conditionalUpdate = false
 * rest.resource[=].conditionalDelete = #not-supported
-* rest.operation[0].name = "proposal-status"
+* rest.operation[0].name = "proposal_status"
 * rest.operation[=].definition = "#proposalStatusOperation"
-* rest.operation[+].name = "proposals-to-prescribe"
+* rest.operation[+].name = "proposals_to_prescribe"
 * rest.operation[=].definition = "#proposalsToPrescribeOperation"
 * rest.operation[+].name = "prescription"
 * rest.operation[=].definition = "#prescriptionOperation"
-* rest.operation[+].name = "prescriptions-to-dispense"
+* rest.operation[+].name = "prescriptions_to_dispense"
 * rest.operation[=].definition = "#prescriptionsToDispenseOperation"
-* rest.operation[+].name = "prescription-to-dispense"
+* rest.operation[+].name = "prescription_to_dispense"
 * rest.operation[=].definition = "#prescriptionToDispenseOperation"
-* rest.operation[+].name = "patient-initial-prescriptions"
+* rest.operation[+].name = "patient_initial_prescriptions"
 * rest.operation[=].definition = "#patientInitialPrescriptionsOperation"
 
 Instance: proposalStatusOperation
 InstanceOf: OperationDefinition
 Usage: #inline
-* name = "proposal-status"
+* name = "proposal_status"
+* title = "proposal-status"
 * status = #active
-* kind = #query
+* kind = #operation
 * code = #proposal-status
 * system = true
 * type = false
@@ -103,7 +95,7 @@ Usage: #inline
 Instance: proposalsToPrescribeOperation
 InstanceOf: OperationDefinition
 Usage: #inline
-* name = "proposals-to-prescribe"
+* name = "proposals_to_prescribe"
 * status = #active
 * kind = #operation
 * code = #proposals-to-prescribe
@@ -125,7 +117,7 @@ Usage: #inline
 Instance: prescriptionsToDispenseOperation
 InstanceOf: OperationDefinition
 Usage: #inline
-* name = "prescriptions-to-dispense"
+* name = "prescriptions_to_dispense"
 * status = #active
 * kind = #operation
 * code = #prescriptions-to-dispense
@@ -136,7 +128,7 @@ Usage: #inline
 Instance: prescriptionToDispenseOperation
 InstanceOf: OperationDefinition
 Usage: #inline
-* name = "prescription-to-dispense"
+* name = "prescription_to_dispense"
 * status = #active
 * kind = #operation
 * code = #prescription-to-dispense
@@ -152,7 +144,7 @@ Usage: #inline
 Instance: patientInitialPrescriptionsOperation
 InstanceOf: OperationDefinition
 Usage: #inline
-* name = "patient-initial-prescriptions"
+* name = "patient_initial_prescriptions"
 * status = #active
 * kind = #operation
 * code = #patient-initial-prescriptions

@@ -10,14 +10,17 @@ Usage: #example
 * contained[+] = example-mon-2
 * subject
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * action[0].type = #create
+* action[=].type.coding.system = "http://terminology.hl7.org/CodeSystem/action-type"
 * action[=].resource = Reference(dd3dc150a0cf4edf8b8cd577191a1000)
 * action[+].type = #create
+* action[=].type.coding.system = "http://terminology.hl7.org/CodeSystem/action-type"
 * action[=].resource = Reference(d2359858cb6640faa9d1f8a12345bada)
 * action[+].type = #create
+* action[=].type.coding.system = "http://terminology.hl7.org/CodeSystem/action-type"
 * action[=].resource = Reference(c42a921b95004b87a7d19fa59cf64c99)
 
 Instance: example-2-0-0-1
@@ -36,14 +39,14 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
@@ -81,14 +84,14 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1
@@ -115,14 +118,14 @@ Usage: #inline
 * medication.concept = $asp-liste#981417
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * note[0].text = "Pharmacy Logisitic Label"
 * dosageInstruction[0].sequence = 1

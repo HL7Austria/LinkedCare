@@ -24,8 +24,8 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 
 Instance: Registered-Patient-Patrizia
@@ -54,8 +54,8 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 
 Instance: Registered-Patient-Renate
@@ -84,6 +84,6 @@ Usage: #example
 * address.country = "AT"
 * managingOrganization 
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"

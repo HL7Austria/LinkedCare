@@ -15,13 +15,13 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Renate) 
 * performer 
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "Take 1 pill daily" 
@@ -49,8 +49,8 @@ Usage: #example
 * subject = Reference(Registered-Patient-Renate) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.3"
   * display = "Pflegedienst Immerdar"
 * requester
   * identifier
@@ -59,8 +59,8 @@ Usage: #example
   * display = "DGKP Susanne Allzeit"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.1"
   * display = "Dr. Wibke Würm"
 * dosageInstruction[0].sequence = 1
 * dosageInstruction[=].text = "2 x 1 daily" 
@@ -83,8 +83,8 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
   * identifier
@@ -93,8 +93,8 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
 * dosageInstruction[0].sequence = 1
@@ -107,8 +107,8 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
 
@@ -128,8 +128,8 @@ Usage: #example
 * subject = Reference(Registered-Patient-Guenter) 
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
@@ -139,8 +139,8 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * note[0].text = "Station SUNFLOWER, room 13"
 * dosageInstruction[0].sequence = 1
@@ -153,8 +153,8 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000116169 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
 Instance: Ex0202-inline-LINCAProposalItem-US003-Item2
@@ -169,8 +169,8 @@ Usage: #inline
 * subject = Reference(Registered-Patient-Patrizia)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * requester
   * identifier
@@ -179,8 +179,8 @@ Usage: #inline
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
 * dosageInstruction[0].sequence = 1
@@ -193,8 +193,8 @@ Usage: #inline
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
 Instance: Ex0204-instance-US003-Item2
@@ -215,8 +215,8 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
@@ -226,8 +226,8 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * note[0].text = "Station TULIP, room 2"
 * dosageInstruction[0].sequence = 1
@@ -240,8 +240,8 @@ Usage: #example
 * dosageInstruction[=].doseAndRate.doseQuantity = 2 $DoseForm#100000073665 
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
 Instance: Ex0205-US004-Update-basedOn
@@ -256,12 +256,12 @@ Usage: #example
 * basedOn = Reference(Ex0203-instance-US003-Item1)
 * status = #active
 * intent = #proposal
-* medication.concept.coding.display = "Creme mixed at pharmacy"
+* medication.concept.text = "Creme mixed at pharmacy"
 * subject = Reference(Registered-Patient-Guenter)
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
@@ -271,13 +271,13 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.3"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.3"
   * display = "Dr. Silvia Spitzmaus"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
 
 Instance: Ex0206-US005-Cancel-basedOn
@@ -299,8 +299,8 @@ Usage: #example
     * value = "1148070771"
 * informationSource
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.1.1.1"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.1.1.1"
   * display = "Haus Vogelsang"
 * supportingInformation[0] = Reference(Ex0200-LINCARequestOrchestration-US003)
 * requester
@@ -310,11 +310,11 @@ Usage: #example
   * display = "DGKP Walter Specht"
 * performer
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.3.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.3.1.2"
   * display = "Dr. Kunibert Kreuzotter"
 * dispenseRequest.dispenser
   * identifier
-    * system = "urn:oid:1.2.40.0.34.5.2"
-    * value = "2.999.40.0.34.5.1.2"
+    * system = "urn:ietf:rfc:3986"
+    * value = "urn:oid:2.999.40.0.34.5.1.2"
   * display = "Apotheke 'Zum frühen Vogel'"
