@@ -1,5 +1,6 @@
 Instance: LINCACapabilityStatement
 InstanceOf: CapabilityStatement
+Title: "LinkedCare Capability Statement"
 Usage: #definition
 * version = "1.3.0"
 * name = "LinkedCare_FHIRCAAT_CapabilityStatement"
@@ -9,12 +10,6 @@ Usage: #definition
 * description = "LOIDL Consulting HL7/FHIR R5 Gateway"
 * kind = #requirements
 * fhirVersion = #5.0.0
-* contained[0] = proposalStatusOperation
-* contained[+] = proposalsToPrescribeOperation
-* contained[+] = prescriptionOperation
-* contained[+] = prescriptionsToDispenseOperation
-* contained[+] = prescriptionToDispenseOperation
-* contained[+] = patientInitialPrescriptionsOperation
 * format[0] = #xml
 * format[+] = #json
 * rest.mode = #server
@@ -63,38 +58,43 @@ Usage: #definition
 * rest.resource[=].conditionalUpdate = false
 * rest.resource[=].conditionalDelete = #not-supported
 * rest.operation[0].name = "proposal_status"
-* rest.operation[=].definition = "#proposalStatusOperation"
+* rest.operation[=].definition = "proposalStatusOperation"
 * rest.operation[+].name = "proposals_to_prescribe"
-* rest.operation[=].definition = "#proposalsToPrescribeOperation"
+* rest.operation[=].definition = "proposalsToPrescribeOperation"
 * rest.operation[+].name = "prescription"
-* rest.operation[=].definition = "#prescriptionOperation"
+* rest.operation[=].definition = "prescriptionOperation"
 * rest.operation[+].name = "prescriptions_to_dispense"
-* rest.operation[=].definition = "#prescriptionsToDispenseOperation"
+* rest.operation[=].definition = "prescriptionsToDispenseOperation"
 * rest.operation[+].name = "prescription_to_dispense"
-* rest.operation[=].definition = "#prescriptionToDispenseOperation"
+* rest.operation[=].definition = "prescriptionToDispenseOperation"
 * rest.operation[+].name = "patient_initial_prescriptions"
-* rest.operation[=].definition = "#patientInitialPrescriptionsOperation"
+* rest.operation[=].definition = "patientInitialPrescriptionsOperation"
 
 Instance: proposalStatusOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "proposal-status"
+Description: "Invoke this operation with GET. It returns a Bundle containing all original proposals for the given lc_id and the linked resource chains (LINCAProposalMedicationRequest, LINCAPrescriptionMedicationRequest, LINCAMedicationDispense)" 
+Usage: #definition
 * name = "proposal_status"
-* title = "proposal-status"
 * status = #active
 * kind = #operation
 * code = #proposal-status
 * system = true
 * type = false
 * instance = false
-* parameter.name = #lc_id
-* parameter.use = #in
-* parameter.min = 1
-* parameter.max = "1"
-* parameter.type = #id
+* parameter[0].name = #lc_id
+* parameter[=].use = #in
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "The id (Guid) of the LINCA proposal list (LINCARequestOrchestration)" 
+* parameter[=].type = #id
+
 
 Instance: proposalsToPrescribeOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "proposals-to-prescribe"
+Description: "Invoke this operation with GET. It returns a Bundle containing all (active/not cancelled) proposals from the last 90 days assigned to the requesting doctor and the linked resource chains (LINCAProposalMedicationRequest, LINCAPrescriptionMedicationRequest, LINCAMedicationDispense)" 
+Usage: #definition
 * name = "proposals_to_prescribe"
 * status = #active
 * kind = #operation
@@ -105,7 +105,9 @@ Usage: #inline
 
 Instance: prescriptionOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "prescription"
+Description: "Invoke this operation with POST. As request body provide a Bundle containing one or more LINCAPrescriptionMedicationRequest resources with equal groupIdentifier for the same patient." 
+Usage: #definition
 * name = "prescription"
 * status = #active
 * kind = #operation
@@ -116,7 +118,9 @@ Usage: #inline
 
 Instance: prescriptionsToDispenseOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "prescriptions-to-dispense"
+Description: "Invoke this operation with GET. It returns a Bundle containing all (active/not cancelled) prescriptions from the last 90 days assigned to the requesting pharmacy and the linked resource chains (LINCAProposalMedicationRequest, LINCAPrescriptionMedicationRequest, LINCAMedicationDispense)" 
+Usage: #definition
 * name = "prescriptions_to_dispense"
 * status = #active
 * kind = #operation
@@ -127,7 +131,9 @@ Usage: #inline
 
 Instance: prescriptionToDispenseOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "prescription-to-dispense"
+Description: "Invoke this operation with GET. It returns a Bundle of all prescriptions that contain the given id in the groupIdentifier field and the linked resource chains (LINCAProposalMedicationRequest, LINCAPrescriptionMedicationRequest, LINCAMedicationDispense)" 
+Usage: #definition
 * name = "prescription_to_dispense"
 * status = #active
 * kind = #operation
@@ -139,11 +145,14 @@ Usage: #inline
 * parameter.use = #in
 * parameter.min = 1
 * parameter.max = "1"
+* parameter.documentation = "The LinkedCare prescription-id or eRezept-Id, extracted from the scanned Datamatrix-code"
 * parameter.type = #string
 
 Instance: patientInitialPrescriptionsOperation
 InstanceOf: OperationDefinition
-Usage: #inline
+Title: "patient-initial-prescriptions"
+Description: "Invoke this operation with GET. It returns a Bundle of all initial prescriptions issued within the last 90 days for the patient identified by the parameter svnr (social insurance number) and the linked resource chains (LINCAPrescriptionMedicationRequest, LINCAMedicationDispense)"
+Usage: #definition
 * name = "patient_initial_prescriptions"
 * status = #active
 * kind = #operation
@@ -155,4 +164,5 @@ Usage: #inline
 * parameter.use = #in
 * parameter.min = 1
 * parameter.max = "1"
+* parameter.documentation = "The social insurance number of the patient" 
 * parameter.type = #string
