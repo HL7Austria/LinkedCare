@@ -1,0 +1,17 @@
+{
+    "package-id": "hl7.at.fhir.linkedcare.r5",
+    "version": "1.0.0",
+    "path": "https://fhir.hl7.at/linkedcare/1.0.0",
+    "mode": "milestone",
+    "status": "trial-use",
+    "sequence": "STU 1",
+    "desc": "The Linked Care Implementation Guide defines the FHIR R5 interface for ordering, prescribing and dispensing medication between care organizations, practitioners and pharmacies in Austria.",
+    "first": true,
+    "title": "Linked Care Implementation Guide",
+    "ci-build": "https://fhir.hl7.at/r5-LinkedCare-main/",
+    "introduction": "The Linked Care Implementation Guide defines the FHIR R5 interface for ordering, prescribing and dispensing medication between care organizations, practitioners and pharmacies in Austria.",
+    "registry-description": "The Linked Care Implementation Guide defines the FHIR R5 interface for ordering, prescribing and dispensing medication between care organizations, practitioners and pharmacies in Austria.",
+    "registry-country": "AT",
+    "registry-authority": "HL7 Austria",
+    "category": "Medication / Immunization"
+}
